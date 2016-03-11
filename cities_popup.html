@@ -1,0 +1,3168 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://rawgithub.com/lvoogdt/Leaflet.awesome-markers/2.0/develop/dist/leaflet.awesome-markers.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://rawgit.com/lvoogdt/Leaflet.awesome-markers/2.0/develop/dist/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_c8fe053974d74ca3812d8a3e080fab7f {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_c8fe053974d74ca3812d8a3e080fab7f" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_c8fe053974d74ca3812d8a3e080fab7f = L.map('map_c8fe053974d74ca3812d8a3e080fab7f', {
+                                           center:[35,-102],
+                                           zoom: 4,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_315c1bc3912b495e8234188ecb0e3c8a = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+
+        
+        
+            
+
+            var marker_a3ced050be6d4c6cbcf0eca59d215c7a = L.marker(
+                [35.0841034,-106.650985],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_25d647fec1474adf899ae8c8b8dd4f7f = L.popup({maxWidth: '300'});
+
+            
+                var html_f81e1825c3e3413fb141d6e39470d7fe = $('         <div id="html_f81e1825c3e3413fb141d6e39470d7fe"                 style="width: 100.0%; height: 100.0%;">                 Albuquerque, NM : 95 listings</div>                 ')[0];
+                popup_25d647fec1474adf899ae8c8b8dd4f7f.setContent(html_f81e1825c3e3413fb141d6e39470d7fe);
+            
+
+            marker_a3ced050be6d4c6cbcf0eca59d215c7a.bindPopup(popup_25d647fec1474adf899ae8c8b8dd4f7f);
+
+            
+        
+        
+            
+
+            var marker_7f95d374b6af4126b18b48abeff3d315 = L.marker(
+                [38.8051095,-77.0470228],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_345ce51747c64b4a846a5a770c6dcc14 = L.popup({maxWidth: '300'});
+
+            
+                var html_12feb95e11284947ac78e670e65a66f8 = $('         <div id="html_12feb95e11284947ac78e670e65a66f8"                 style="width: 100.0%; height: 100.0%;">                 Alexandria, VA : 66 listings</div>                 ')[0];
+                popup_345ce51747c64b4a846a5a770c6dcc14.setContent(html_12feb95e11284947ac78e670e65a66f8);
+            
+
+            marker_7f95d374b6af4126b18b48abeff3d315.bindPopup(popup_345ce51747c64b4a846a5a770c6dcc14);
+
+            
+        
+        
+            
+
+            var marker_002dbc0adf89464e91a11cc0ebc39f8b = L.marker(
+                [61.2163129,-149.8948522],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_9193ac0ca13348329d813f433f58d8e0 = L.popup({maxWidth: '300'});
+
+            
+                var html_cd316ecdf80843feb83f921c409bf48d = $('         <div id="html_cd316ecdf80843feb83f921c409bf48d"                 style="width: 100.0%; height: 100.0%;">                 Anchorage, AK : 50 listings</div>                 ')[0];
+                popup_9193ac0ca13348329d813f433f58d8e0.setContent(html_cd316ecdf80843feb83f921c409bf48d);
+            
+
+            marker_002dbc0adf89464e91a11cc0ebc39f8b.bindPopup(popup_9193ac0ca13348329d813f433f58d8e0);
+
+            
+        
+        
+            
+
+            var marker_ca4aa33fe1a14ae78525f9b78e544d71 = L.marker(
+                [42.2681569,-83.731229],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_6c139644faba4d61b0b07f8cce1130f2 = L.popup({maxWidth: '300'});
+
+            
+                var html_b8b60c6b25aa4008aeaaf84e0b87645c = $('         <div id="html_b8b60c6b25aa4008aeaaf84e0b87645c"                 style="width: 100.0%; height: 100.0%;">                 Ann Arbor, MI : 63 listings</div>                 ')[0];
+                popup_6c139644faba4d61b0b07f8cce1130f2.setContent(html_b8b60c6b25aa4008aeaaf84e0b87645c);
+            
+
+            marker_ca4aa33fe1a14ae78525f9b78e544d71.bindPopup(popup_6c139644faba4d61b0b07f8cce1130f2);
+
+            
+        
+        
+            
+
+            var marker_ab53573185954e4eadbf4db3593c2d8d = L.marker(
+                [38.8903961,-77.0841584],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_c08b1ea833c345d691877ac035826506 = L.popup({maxWidth: '300'});
+
+            
+                var html_a9532705495443a7901adfd96a760dc6 = $('         <div id="html_a9532705495443a7901adfd96a760dc6"                 style="width: 100.0%; height: 100.0%;">                 Arlington, VA : 214 listings</div>                 ')[0];
+                popup_c08b1ea833c345d691877ac035826506.setContent(html_a9532705495443a7901adfd96a760dc6);
+            
+
+            marker_ab53573185954e4eadbf4db3593c2d8d.bindPopup(popup_c08b1ea833c345d691877ac035826506);
+
+            
+        
+        
+            
+
+            var marker_bdd0a34b4c674f799055035534ecd726 = L.marker(
+                [33.7490987,-84.3901848],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_e5506ac1c8b2475c9b0a53470bfd6206 = L.popup({maxWidth: '300'});
+
+            
+                var html_f3d69f58cb3349c69e86cdc3bf5a2cb8 = $('         <div id="html_f3d69f58cb3349c69e86cdc3bf5a2cb8"                 style="width: 100.0%; height: 100.0%;">                 Atlanta, GA : 302 listings</div>                 ')[0];
+                popup_e5506ac1c8b2475c9b0a53470bfd6206.setContent(html_f3d69f58cb3349c69e86cdc3bf5a2cb8);
+            
+
+            marker_bdd0a34b4c674f799055035534ecd726.bindPopup(popup_e5506ac1c8b2475c9b0a53470bfd6206);
+
+            
+        
+        
+            
+
+            var marker_ea99049891f34d1d8b33992a6e6b19d0 = L.marker(
+                [30.2711286,-97.7436994],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_e0660209041e4e51af13f6c715a3fc25 = L.popup({maxWidth: '300'});
+
+            
+                var html_3e52845cf42b4e32833b715e99e7bb9a = $('         <div id="html_3e52845cf42b4e32833b715e99e7bb9a"                 style="width: 100.0%; height: 100.0%;">                 Austin, TX : 2836 listings</div>                 ')[0];
+                popup_e0660209041e4e51af13f6c715a3fc25.setContent(html_3e52845cf42b4e32833b715e99e7bb9a);
+            
+
+            marker_ea99049891f34d1d8b33992a6e6b19d0.bindPopup(popup_e0660209041e4e51af13f6c715a3fc25);
+
+            
+        
+        
+            
+
+            var marker_8113087d4d4e499384dd30c11ab2e03f = L.marker(
+                [39.2908608,-76.6108072],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_34972de8c5dd499daafa0d6d91568f14 = L.popup({maxWidth: '300'});
+
+            
+                var html_da6c7bb9cd9f4549a769070a437666e2 = $('         <div id="html_da6c7bb9cd9f4549a769070a437666e2"                 style="width: 100.0%; height: 100.0%;">                 Baltimore, MD : 137 listings</div>                 ')[0];
+                popup_34972de8c5dd499daafa0d6d91568f14.setContent(html_da6c7bb9cd9f4549a769070a437666e2);
+            
+
+            marker_8113087d4d4e499384dd30c11ab2e03f.bindPopup(popup_34972de8c5dd499daafa0d6d91568f14);
+
+            
+        
+        
+            
+
+            var marker_d617918876f442afafcfd0f7f80d7abd = L.marker(
+                [37.8708393,-122.2728638],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_5e5d5229b9974d6c9e3c4019fb1deda1 = L.popup({maxWidth: '300'});
+
+            
+                var html_4791e6da7a0e4637a5fe31de1ed5d358 = $('         <div id="html_4791e6da7a0e4637a5fe31de1ed5d358"                 style="width: 100.0%; height: 100.0%;">                 Berkeley, CA : 328 listings</div>                 ')[0];
+                popup_5e5d5229b9974d6c9e3c4019fb1deda1.setContent(html_4791e6da7a0e4637a5fe31de1ed5d358);
+            
+
+            marker_d617918876f442afafcfd0f7f80d7abd.bindPopup(popup_5e5d5229b9974d6c9e3c4019fb1deda1);
+
+            
+        
+        
+            
+
+            var marker_42c07b6c65724938b9ce213aa34b8422 = L.marker(
+                [39.7748024,-105.0384346],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_1d5f2fd22efb4cda8aa717d38ebbefb4 = L.popup({maxWidth: '300'});
+
+            
+                var html_f89feeb2f28f4a16b161c69337ee8d48 = $('         <div id="html_f89feeb2f28f4a16b161c69337ee8d48"                 style="width: 100.0%; height: 100.0%;">                 Berkeley, CO : 1 listings</div>                 ')[0];
+                popup_1d5f2fd22efb4cda8aa717d38ebbefb4.setContent(html_f89feeb2f28f4a16b161c69337ee8d48);
+            
+
+            marker_42c07b6c65724938b9ce213aa34b8422.bindPopup(popup_1d5f2fd22efb4cda8aa717d38ebbefb4);
+
+            
+        
+        
+            
+
+            var marker_1998c8b919e54df7b6a00a30333cab23 = L.marker(
+                [34.0736204,-118.4003562],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_6643c4f8978f416cb3043791cdbc881c = L.popup({maxWidth: '300'});
+
+            
+                var html_30ebdef43a8f4f59bc90130610fed360 = $('         <div id="html_30ebdef43a8f4f59bc90130610fed360"                 style="width: 100.0%; height: 100.0%;">                 Beverly Hills, CA : 74 listings</div>                 ')[0];
+                popup_6643c4f8978f416cb3043791cdbc881c.setContent(html_30ebdef43a8f4f59bc90130610fed360);
+            
+
+            marker_1998c8b919e54df7b6a00a30333cab23.bindPopup(popup_6643c4f8978f416cb3043791cdbc881c);
+
+            
+        
+        
+            
+
+            var marker_c5cbe5f83fa148398486646df4e47b95 = L.marker(
+                [42.3604823,-71.0595677],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_86965254a1df4520b48d05937a3f7276 = L.popup({maxWidth: '300'});
+
+            
+                var html_edb55bb2a83848a8b59544378bdbd7dd = $('         <div id="html_edb55bb2a83848a8b59544378bdbd7dd"                 style="width: 100.0%; height: 100.0%;">                 Boston, MA : 613 listings</div>                 ')[0];
+                popup_86965254a1df4520b48d05937a3f7276.setContent(html_edb55bb2a83848a8b59544378bdbd7dd);
+            
+
+            marker_c5cbe5f83fa148398486646df4e47b95.bindPopup(popup_86965254a1df4520b48d05937a3f7276);
+
+            
+        
+        
+            
+
+            var marker_44f0376225ac47c385b175f268733726 = L.marker(
+                [40.0149856,-105.2705455],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_bdd4bef0eaf4401f81244623f2cd0060 = L.popup({maxWidth: '300'});
+
+            
+                var html_b9c433ec3f2b4d679a13f1abaf39b295 = $('         <div id="html_b9c433ec3f2b4d679a13f1abaf39b295"                 style="width: 100.0%; height: 100.0%;">                 Boulder, CO : 265 listings</div>                 ')[0];
+                popup_bdd4bef0eaf4401f81244623f2cd0060.setContent(html_b9c433ec3f2b4d679a13f1abaf39b295);
+            
+
+            marker_44f0376225ac47c385b175f268733726.bindPopup(popup_bdd4bef0eaf4401f81244623f2cd0060);
+
+            
+        
+        
+            
+
+            var marker_be8da03004004474865e92cd780140fb = L.marker(
+                [40.8527855,-73.8390537935],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_eaebf0dccb82455086c9a92c1d036894 = L.popup({maxWidth: '300'});
+
+            
+                var html_fc916094e2514f849b270ad76e9df169 = $('         <div id="html_fc916094e2514f849b270ad76e9df169"                 style="width: 100.0%; height: 100.0%;">                 Bronx, NY : 113 listings</div>                 ')[0];
+                popup_eaebf0dccb82455086c9a92c1d036894.setContent(html_fc916094e2514f849b270ad76e9df169);
+            
+
+            marker_be8da03004004474865e92cd780140fb.bindPopup(popup_eaebf0dccb82455086c9a92c1d036894);
+
+            
+        
+        
+            
+
+            var marker_a1459b8bfa0f4fbc9945b0e7e9d7bd0d = L.marker(
+                [42.3317642,-71.1211634],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_9a9119864a984b1185795ffcf1fefb42 = L.popup({maxWidth: '300'});
+
+            
+                var html_5cb376ce9ef94a4380fb2b080af7e8d5 = $('         <div id="html_5cb376ce9ef94a4380fb2b080af7e8d5"                 style="width: 100.0%; height: 100.0%;">                 Brookline, MA : 47 listings</div>                 ')[0];
+                popup_9a9119864a984b1185795ffcf1fefb42.setContent(html_5cb376ce9ef94a4380fb2b080af7e8d5);
+            
+
+            marker_a1459b8bfa0f4fbc9945b0e7e9d7bd0d.bindPopup(popup_9a9119864a984b1185795ffcf1fefb42);
+
+            
+        
+        
+            
+
+            var marker_7367d4d395d64406976372a2abbdffbc = L.marker(
+                [42.7348102,-71.6581266],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_cb5906e59a9d463ba6e9583862bfd881 = L.popup({maxWidth: '300'});
+
+            
+                var html_f1ad61e69bda498c8570deb4eaf73d95 = $('         <div id="html_f1ad61e69bda498c8570deb4eaf73d95"                 style="width: 100.0%; height: 100.0%;">                 Brookline, NH : 2 listings</div>                 ')[0];
+                popup_cb5906e59a9d463ba6e9583862bfd881.setContent(html_f1ad61e69bda498c8570deb4eaf73d95);
+            
+
+            marker_7367d4d395d64406976372a2abbdffbc.bindPopup(popup_cb5906e59a9d463ba6e9583862bfd881);
+
+            
+        
+        
+            
+
+            var marker_7063db3d60cc4648abc0d7a0192e050d = L.marker(
+                [40.6501038,-73.9495822],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_010f7e8380154ebb8bc018ad31caa9a8 = L.popup({maxWidth: '300'});
+
+            
+                var html_ba2da59aae074d30b855bc08d10e7afd = $('         <div id="html_ba2da59aae074d30b855bc08d10e7afd"                 style="width: 100.0%; height: 100.0%;">                 Brooklyn, NY : 4368 listings</div>                 ')[0];
+                popup_010f7e8380154ebb8bc018ad31caa9a8.setContent(html_ba2da59aae074d30b855bc08d10e7afd);
+            
+
+            marker_7063db3d60cc4648abc0d7a0192e050d.bindPopup(popup_010f7e8380154ebb8bc018ad31caa9a8);
+
+            
+        
+        
+            
+
+            var marker_e3c5ab110b5349e796d63b7e98a77934 = L.marker(
+                [42.3750997,-71.1056156],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_e42af7ba50144ec7a8f8f2dea8e1bad8 = L.popup({maxWidth: '300'});
+
+            
+                var html_23790c48f83d44f9b63d238976254e3f = $('         <div id="html_23790c48f83d44f9b63d238976254e3f"                 style="width: 100.0%; height: 100.0%;">                 Cambridge, MA : 300 listings</div>                 ')[0];
+                popup_e42af7ba50144ec7a8f8f2dea8e1bad8.setContent(html_23790c48f83d44f9b63d238976254e3f);
+            
+
+            marker_e3c5ab110b5349e796d63b7e98a77934.bindPopup(popup_e42af7ba50144ec7a8f8f2dea8e1bad8);
+
+            
+        
+        
+            
+
+            var marker_729ee236d1b44a34b2eb1647deb890f1 = L.marker(
+                [33.1580933,-117.3505938],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_4af461c9e55449328c2479f555332bdf = L.popup({maxWidth: '300'});
+
+            
+                var html_2fe8d0756402462ab60cdbabf453452a = $('         <div id="html_2fe8d0756402462ab60cdbabf453452a"                 style="width: 100.0%; height: 100.0%;">                 Carlsbad, CA : 54 listings</div>                 ')[0];
+                popup_4af461c9e55449328c2479f555332bdf.setContent(html_2fe8d0756402462ab60cdbabf453452a);
+            
+
+            marker_729ee236d1b44a34b2eb1647deb890f1.bindPopup(popup_4af461c9e55449328c2479f555332bdf);
+
+            
+        
+        
+            
+
+            var marker_ba362c401e424fd68beadf854eb16ab4 = L.marker(
+                [-34.7875445,-55.980469],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_c0fa48b7d6c7479ab2cdaf2c8cf3c69d = L.popup({maxWidth: '300'});
+
+            
+                var html_7de69a63771e4204a015d9bfa7c31948 = $('         <div id="html_7de69a63771e4204a015d9bfa7c31948"                 style="width: 100.0%; height: 100.0%;">                 Carmel, CA : 31 listings</div>                 ')[0];
+                popup_c0fa48b7d6c7479ab2cdaf2c8cf3c69d.setContent(html_7de69a63771e4204a015d9bfa7c31948);
+            
+
+            marker_ba362c401e424fd68beadf854eb16ab4.bindPopup(popup_c0fa48b7d6c7479ab2cdaf2c8cf3c69d);
+
+            
+        
+        
+            
+
+            var marker_51b58637302442e6a61ae99841f94576 = L.marker(
+                [39.9788383,-86.1187309],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_9671a368a15f45acb31e902e7e4a6df6 = L.popup({maxWidth: '300'});
+
+            
+                var html_d1cbe56466b443b4a9d13ac815afa3f2 = $('         <div id="html_d1cbe56466b443b4a9d13ac815afa3f2"                 style="width: 100.0%; height: 100.0%;">                 Carmel, IN : 16 listings</div>                 ')[0];
+                popup_9671a368a15f45acb31e902e7e4a6df6.setContent(html_d1cbe56466b443b4a9d13ac815afa3f2);
+            
+
+            marker_51b58637302442e6a61ae99841f94576.bindPopup(popup_9671a368a15f45acb31e902e7e4a6df6);
+
+            
+        
+        
+            
+
+            var marker_913e83be6e714d7387cdde092801ea37 = L.marker(
+                [32.7876012,-79.9402727],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_422dfe19e6b8414aabffecb96806ce20 = L.popup({maxWidth: '300'});
+
+            
+                var html_ea04d2b1389c43e0911eba7fea44479f = $('         <div id="html_ea04d2b1389c43e0911eba7fea44479f"                 style="width: 100.0%; height: 100.0%;">                 Charleston, SC : 84 listings</div>                 ')[0];
+                popup_422dfe19e6b8414aabffecb96806ce20.setContent(html_ea04d2b1389c43e0911eba7fea44479f);
+            
+
+            marker_913e83be6e714d7387cdde092801ea37.bindPopup(popup_422dfe19e6b8414aabffecb96806ce20);
+
+            
+        
+        
+            
+
+            var marker_72988aa6f21f48cdabbad1faeb2e2fc9 = L.marker(
+                [35.2270869,-80.8431267],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_880732546f1e4bbebf901b8a247793ca = L.popup({maxWidth: '300'});
+
+            
+                var html_46f2cba95aeb4dfb9561596ad5b85b6b = $('         <div id="html_46f2cba95aeb4dfb9561596ad5b85b6b"                 style="width: 100.0%; height: 100.0%;">                 Charlotte, NC : 225 listings</div>                 ')[0];
+                popup_880732546f1e4bbebf901b8a247793ca.setContent(html_46f2cba95aeb4dfb9561596ad5b85b6b);
+            
+
+            marker_72988aa6f21f48cdabbad1faeb2e2fc9.bindPopup(popup_880732546f1e4bbebf901b8a247793ca);
+
+            
+        
+        
+            
+
+            var marker_8991ef609934408db71785ee302b0ba0 = L.marker(
+                [41.8755546,-87.6244211],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_e612114889774d84b555cfebc28c5eb8 = L.popup({maxWidth: '300'});
+
+            
+                var html_546587935efd4df1bff76bd41ea69f70 = $('         <div id="html_546587935efd4df1bff76bd41ea69f70"                 style="width: 100.0%; height: 100.0%;">                 Chicago, IL : 1255 listings</div>                 ')[0];
+                popup_e612114889774d84b555cfebc28c5eb8.setContent(html_546587935efd4df1bff76bd41ea69f70);
+            
+
+            marker_8991ef609934408db71785ee302b0ba0.bindPopup(popup_e612114889774d84b555cfebc28c5eb8);
+
+            
+        
+        
+            
+
+            var marker_78e014231240417d804946d5aaeb3037 = L.marker(
+                [39.1014537,-84.5124601],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_64faba95b74f4b33a4cad0d4a867abc5 = L.popup({maxWidth: '300'});
+
+            
+                var html_3a74acc3090648eeabe843fbe5913c85 = $('         <div id="html_3a74acc3090648eeabe843fbe5913c85"                 style="width: 100.0%; height: 100.0%;">                 Cincinnati, OH : 47 listings</div>                 ')[0];
+                popup_64faba95b74f4b33a4cad0d4a867abc5.setContent(html_3a74acc3090648eeabe843fbe5913c85);
+            
+
+            marker_78e014231240417d804946d5aaeb3037.bindPopup(popup_64faba95b74f4b33a4cad0d4a867abc5);
+
+            
+        
+        
+            
+
+            var marker_bfcf4d680513454fbbcb4fd3d2341372 = L.marker(
+                [38.8339578,-104.8253484],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_f6e8f9236e1c4ac88df6e8ac08c5821e = L.popup({maxWidth: '300'});
+
+            
+                var html_a16591a0e1f2418ab731011bb918fbef = $('         <div id="html_a16591a0e1f2418ab731011bb918fbef"                 style="width: 100.0%; height: 100.0%;">                 Colorado Springs, CO : 54 listings</div>                 ')[0];
+                popup_f6e8f9236e1c4ac88df6e8ac08c5821e.setContent(html_a16591a0e1f2418ab731011bb918fbef);
+            
+
+            marker_bfcf4d680513454fbbcb4fd3d2341372.bindPopup(popup_f6e8f9236e1c4ac88df6e8ac08c5821e);
+
+            
+        
+        
+            
+
+            var marker_839e0e2fee864c038a87147864470619 = L.marker(
+                [44.9189206,-123.3158694],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_f1f9d7c06da14b199f85c798ea22aab0 = L.popup({maxWidth: '300'});
+
+            
+                var html_9c941fca60ce44cebe4a157ea68fbb29 = $('         <div id="html_9c941fca60ce44cebe4a157ea68fbb29"                 style="width: 100.0%; height: 100.0%;">                 Dallas, OR : 1 listings</div>                 ')[0];
+                popup_f1f9d7c06da14b199f85c798ea22aab0.setContent(html_9c941fca60ce44cebe4a157ea68fbb29);
+            
+
+            marker_839e0e2fee864c038a87147864470619.bindPopup(popup_f1f9d7c06da14b199f85c798ea22aab0);
+
+            
+        
+        
+            
+
+            var marker_593356d930bf4f71b3ed1a0c1cdd577e = L.marker(
+                [32.7762719,-96.7968558],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_1efb967dd233440495c5eefa31cff89f = L.popup({maxWidth: '300'});
+
+            
+                var html_cf44e8db645645668f2f62d94725e9b3 = $('         <div id="html_cf44e8db645645668f2f62d94725e9b3"                 style="width: 100.0%; height: 100.0%;">                 Dallas, TX : 114 listings</div>                 ')[0];
+                popup_1efb967dd233440495c5eefa31cff89f.setContent(html_cf44e8db645645668f2f62d94725e9b3);
+            
+
+            marker_593356d930bf4f71b3ed1a0c1cdd577e.bindPopup(popup_1efb967dd233440495c5eefa31cff89f);
+
+            
+        
+        
+            
+
+            var marker_b94c016dba924d36b1e1af7600f0a9a5 = L.marker(
+                [37.0116166,-122.1919133],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_85f5259f7bcc42ac9cf8d9d5179240f6 = L.popup({maxWidth: '300'});
+
+            
+                var html_071c42675ba241ccbcb334974ad6c91f = $('         <div id="html_071c42675ba241ccbcb334974ad6c91f"                 style="width: 100.0%; height: 100.0%;">                 Davenport, CA : 6 listings</div>                 ')[0];
+                popup_85f5259f7bcc42ac9cf8d9d5179240f6.setContent(html_071c42675ba241ccbcb334974ad6c91f);
+            
+
+            marker_b94c016dba924d36b1e1af7600f0a9a5.bindPopup(popup_85f5259f7bcc42ac9cf8d9d5179240f6);
+
+            
+        
+        
+            
+
+            var marker_4a613ae1d4a94be39273c249f5338b3d = L.marker(
+                [28.1614046,-81.6017416],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_3bbf06b1d99e43b197973b174755985b = L.popup({maxWidth: '300'});
+
+            
+                var html_bb6ec04afd2e4868a98104de117f25a4 = $('         <div id="html_bb6ec04afd2e4868a98104de117f25a4"                 style="width: 100.0%; height: 100.0%;">                 Davenport, FL : 108 listings</div>                 ')[0];
+                popup_3bbf06b1d99e43b197973b174755985b.setContent(html_bb6ec04afd2e4868a98104de117f25a4);
+            
+
+            marker_4a613ae1d4a94be39273c249f5338b3d.bindPopup(popup_3bbf06b1d99e43b197973b174755985b);
+
+            
+        
+        
+            
+
+            var marker_731c00eaa9fd447dbcd1ccca6589c1a3 = L.marker(
+                [41.5236436,-90.5776367],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_8d2572c1b0ee439085115043834ad31b = L.popup({maxWidth: '300'});
+
+            
+                var html_61401bfdd06041ad98b06cd3fea530b1 = $('         <div id="html_61401bfdd06041ad98b06cd3fea530b1"                 style="width: 100.0%; height: 100.0%;">                 Davenport, IA : 2 listings</div>                 ')[0];
+                popup_8d2572c1b0ee439085115043834ad31b.setContent(html_61401bfdd06041ad98b06cd3fea530b1);
+            
+
+            marker_731c00eaa9fd447dbcd1ccca6589c1a3.bindPopup(popup_8d2572c1b0ee439085115043834ad31b);
+
+            
+        
+        
+            
+
+            var marker_4a9a0f4c0a804186b7970525717ab3a0 = L.marker(
+                [39.7391536,-104.9847033],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_7971cce269984a9e95df1d90c5d5df15 = L.popup({maxWidth: '300'});
+
+            
+                var html_ec34e6837a7c423d94ab8b80b544e69e = $('         <div id="html_ec34e6837a7c423d94ab8b80b544e69e"                 style="width: 100.0%; height: 100.0%;">                 Denver, CO : 283 listings</div>                 ')[0];
+                popup_7971cce269984a9e95df1d90c5d5df15.setContent(html_ec34e6837a7c423d94ab8b80b544e69e);
+            
+
+            marker_4a9a0f4c0a804186b7970525717ab3a0.bindPopup(popup_7971cce269984a9e95df1d90c5d5df15);
+
+            
+        
+        
+            
+
+            var marker_905ea45c137e41f685d95ab39c00d522 = L.marker(
+                [39.62651985,-121.803909345],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_2b655a3e848b4ceb9e305776f1738753 = L.popup({maxWidth: '300'});
+
+            
+                var html_7a7fec3913e34da8a2b39b4d6ca64878 = $('         <div id="html_7a7fec3913e34da8a2b39b4d6ca64878"                 style="width: 100.0%; height: 100.0%;">                 Durham, CA : 1 listings</div>                 ')[0];
+                popup_2b655a3e848b4ceb9e305776f1738753.setContent(html_7a7fec3913e34da8a2b39b4d6ca64878);
+            
+
+            marker_905ea45c137e41f685d95ab39c00d522.bindPopup(popup_2b655a3e848b4ceb9e305776f1738753);
+
+            
+        
+        
+            
+
+            var marker_5f9213b7c92f4a53afd2c9b60ff21284 = L.marker(
+                [35.9940329,-78.8986189],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_9cfcd9357aff462dab6b64a15bf067df = L.popup({maxWidth: '300'});
+
+            
+                var html_03de74da0012405490e88cdf35e6df61 = $('         <div id="html_03de74da0012405490e88cdf35e6df61"                 style="width: 100.0%; height: 100.0%;">                 Durham, NC : 63 listings</div>                 ')[0];
+                popup_9cfcd9357aff462dab6b64a15bf067df.setContent(html_03de74da0012405490e88cdf35e6df61);
+            
+
+            marker_5f9213b7c92f4a53afd2c9b60ff21284.bindPopup(popup_9cfcd9357aff462dab6b64a15bf067df);
+
+            
+        
+        
+            
+
+            var marker_79a025d3a3b846dd9f4fa87d93eff33c = L.marker(
+                [44.0505054,-123.0950505],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_63aad1af264a43559ad6071052307ad6 = L.popup({maxWidth: '300'});
+
+            
+                var html_c5e753c06a7747bca62f607e58124d82 = $('         <div id="html_c5e753c06a7747bca62f607e58124d82"                 style="width: 100.0%; height: 100.0%;">                 Eugene, OR : 78 listings</div>                 ')[0];
+                popup_63aad1af264a43559ad6071052307ad6.setContent(html_c5e753c06a7747bca62f607e58124d82);
+            
+
+            marker_79a025d3a3b846dd9f4fa87d93eff33c.bindPopup(popup_63aad1af264a43559ad6071052307ad6);
+
+            
+        
+        
+            
+
+            var marker_cafeb764775f4934b3bcceaad203eee5 = L.marker(
+                [26.1223084,-80.1433785],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_5864bd900b6a4ea8a5c8a5082f34e48e = L.popup({maxWidth: '300'});
+
+            
+                var html_1b206986a3064e87a7999b998221169b = $('         <div id="html_1b206986a3064e87a7999b998221169b"                 style="width: 100.0%; height: 100.0%;">                 Fort Lauderdale, FL : 151 listings</div>                 ')[0];
+                popup_5864bd900b6a4ea8a5c8a5082f34e48e.setContent(html_1b206986a3064e87a7999b998221169b);
+            
+
+            marker_cafeb764775f4934b3bcceaad203eee5.bindPopup(popup_5864bd900b6a4ea8a5c8a5082f34e48e);
+
+            
+        
+        
+            
+
+            var marker_96f12296aaca47228baf6738c26dd7e0 = L.marker(
+                [34.1423455,-118.248367],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_d564382d89924c0eb95d4ed52e1ae62c = L.popup({maxWidth: '300'});
+
+            
+                var html_3ed38490fb164a93b5a04cf7e10b02eb = $('         <div id="html_3ed38490fb164a93b5a04cf7e10b02eb"                 style="width: 100.0%; height: 100.0%;">                 Glendale, CA : 70 listings</div>                 ')[0];
+                popup_d564382d89924c0eb95d4ed52e1ae62c.setContent(html_3ed38490fb164a93b5a04cf7e10b02eb);
+            
+
+            marker_96f12296aaca47228baf6738c26dd7e0.bindPopup(popup_d564382d89924c0eb95d4ed52e1ae62c);
+
+            
+        
+        
+            
+
+            var marker_ff8f0473f30d48fda23b231986404216 = L.marker(
+                [38.6106812,-122.8701379],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_e84ec196e79e4eda8ee6f97462aaf245 = L.popup({maxWidth: '300'});
+
+            
+                var html_e7b6557545ca44279f5e4f5c308d3f38 = $('         <div id="html_e7b6557545ca44279f5e4f5c308d3f38"                 style="width: 100.0%; height: 100.0%;">                 Healdsburg, CA : 49 listings</div>                 ')[0];
+                popup_e84ec196e79e4eda8ee6f97462aaf245.setContent(html_e7b6557545ca44279f5e4f5c308d3f38);
+            
+
+            marker_ff8f0473f30d48fda23b231986404216.bindPopup(popup_e84ec196e79e4eda8ee6f97462aaf245);
+
+            
+        
+        
+            
+
+            var marker_e72732d97612406397c269dd14ff8205 = L.marker(
+                [33.86428,-118.3959099],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_78c03efb6e9741c8bb45f12643e8d4ca = L.popup({maxWidth: '300'});
+
+            
+                var html_4ce01208524b40c99284bf63dda4a151 = $('         <div id="html_4ce01208524b40c99284bf63dda4a151"                 style="width: 100.0%; height: 100.0%;">                 Hermosa Beach, CA : 48 listings</div>                 ')[0];
+                popup_78c03efb6e9741c8bb45f12643e8d4ca.setContent(html_4ce01208524b40c99284bf63dda4a151);
+            
+
+            marker_e72732d97612406397c269dd14ff8205.bindPopup(popup_78c03efb6e9741c8bb45f12643e8d4ca);
+
+            
+        
+        
+            
+
+            var marker_cec0a4dbb5df4d03962493ab9ca170de = L.marker(
+                [34.1028268,-118.3299898],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_f4c6b0f6382a487aadccf6ce4e6b6948 = L.popup({maxWidth: '300'});
+
+            
+                var html_728b47ea47de419fb4c4a9ca09cd36f5 = $('         <div id="html_728b47ea47de419fb4c4a9ca09cd36f5"                 style="width: 100.0%; height: 100.0%;">                 Hollywood, CA : 8 listings</div>                 ')[0];
+                popup_f4c6b0f6382a487aadccf6ce4e6b6948.setContent(html_728b47ea47de419fb4c4a9ca09cd36f5);
+            
+
+            marker_cec0a4dbb5df4d03962493ab9ca170de.bindPopup(popup_f4c6b0f6382a487aadccf6ce4e6b6948);
+
+            
+        
+        
+            
+
+            var marker_b09db97576a64dcb86b9b5536972ab8b = L.marker(
+                [26.0112014,-80.14949],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_6c604dfb47f442c3b9750aca1967ad7e = L.popup({maxWidth: '300'});
+
+            
+                var html_cc12a803c40e44b9b91db56aa9b9d497 = $('         <div id="html_cc12a803c40e44b9b91db56aa9b9d497"                 style="width: 100.0%; height: 100.0%;">                 Hollywood, FL : 150 listings</div>                 ')[0];
+                popup_6c604dfb47f442c3b9750aca1967ad7e.setContent(html_cc12a803c40e44b9b91db56aa9b9d497);
+            
+
+            marker_b09db97576a64dcb86b9b5536972ab8b.bindPopup(popup_6c604dfb47f442c3b9750aca1967ad7e);
+
+            
+        
+        
+            
+
+            var marker_5e67dd7d2e9b4540aeeb7ba380dc0ee0 = L.marker(
+                [33.8418391,-78.6414031],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_5c2e8092ee874331ab5eb9930c37d344 = L.popup({maxWidth: '300'});
+
+            
+                var html_546946896160489e8a6ee427fb0aed4a = $('         <div id="html_546946896160489e8a6ee427fb0aed4a"                 style="width: 100.0%; height: 100.0%;">                 Hollywood, SC : 1 listings</div>                 ')[0];
+                popup_5c2e8092ee874331ab5eb9930c37d344.setContent(html_546946896160489e8a6ee427fb0aed4a);
+            
+
+            marker_5e67dd7d2e9b4540aeeb7ba380dc0ee0.bindPopup(popup_5c2e8092ee874331ab5eb9930c37d344);
+
+            
+        
+        
+            
+
+            var marker_2f7fc73d64244d8baee9dfed287b68ce = L.marker(
+                [21.304547,-157.8556763],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_0bec4dd2c2504a8680a748ca46045f9b = L.popup({maxWidth: '300'});
+
+            
+                var html_fce94bf7d5c541a18cc85b8bd96973b0 = $('         <div id="html_fce94bf7d5c541a18cc85b8bd96973b0"                 style="width: 100.0%; height: 100.0%;">                 Honolulu, HI : 363 listings</div>                 ')[0];
+                popup_0bec4dd2c2504a8680a748ca46045f9b.setContent(html_fce94bf7d5c541a18cc85b8bd96973b0);
+            
+
+            marker_2f7fc73d64244d8baee9dfed287b68ce.bindPopup(popup_0bec4dd2c2504a8680a748ca46045f9b);
+
+            
+        
+        
+            
+
+            var marker_4c8b3e2afc834ce5a4b6a0e5cf9dc953 = L.marker(
+                [29.7589382,-95.3676973],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_c93a4d6f05ec4882bcca262f5041bdec = L.popup({maxWidth: '300'});
+
+            
+                var html_1cb8183134cd48979dcc88f5f7ccdae0 = $('         <div id="html_1cb8183134cd48979dcc88f5f7ccdae0"                 style="width: 100.0%; height: 100.0%;">                 Houston, TX : 175 listings</div>                 ')[0];
+                popup_c93a4d6f05ec4882bcca262f5041bdec.setContent(html_1cb8183134cd48979dcc88f5f7ccdae0);
+            
+
+            marker_4c8b3e2afc834ce5a4b6a0e5cf9dc953.bindPopup(popup_c93a4d6f05ec4882bcca262f5041bdec);
+
+            
+        
+        
+            
+
+            var marker_bb558f9787284997a1a09264f29c3988 = L.marker(
+                [39.251597,-119.9723432],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_b2f6d0412353400eb7af3790942bf479 = L.popup({maxWidth: '300'});
+
+            
+                var html_b3b35b85e39f408abe18085d7d5ccea3 = $('         <div id="html_b3b35b85e39f408abe18085d7d5ccea3"                 style="width: 100.0%; height: 100.0%;">                 Incline Village, NV : 118 listings</div>                 ')[0];
+                popup_b2f6d0412353400eb7af3790942bf479.setContent(html_b3b35b85e39f408abe18085d7d5ccea3);
+            
+
+            marker_bb558f9787284997a1a09264f29c3988.bindPopup(popup_b2f6d0412353400eb7af3790942bf479);
+
+            
+        
+        
+            
+
+            var marker_dff4602ea5dd46628d1cde14d51a26ec = L.marker(
+                [39.7683331,-86.1583501],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_5ef171d1d4dd424eb7f9d2c6a49b4444 = L.popup({maxWidth: '300'});
+
+            
+                var html_e6b0bb9e2c684388afc984c5cffc93b6 = $('         <div id="html_e6b0bb9e2c684388afc984c5cffc93b6"                 style="width: 100.0%; height: 100.0%;">                 Indianapolis, IN : 251 listings</div>                 ')[0];
+                popup_5ef171d1d4dd424eb7f9d2c6a49b4444.setContent(html_e6b0bb9e2c684388afc984c5cffc93b6);
+            
+
+            marker_dff4602ea5dd46628d1cde14d51a26ec.bindPopup(popup_5ef171d1d4dd424eb7f9d2c6a49b4444);
+
+            
+        
+        
+            
+
+            var marker_4988c7d78de24cd0aea298292572a8a5 = L.marker(
+                [40.7281575,-74.0776416],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_73f63d609bbe47eab23087b740feb562 = L.popup({maxWidth: '300'});
+
+            
+                var html_5bdbd1a11fc44c00922c50ce49e4b160 = $('         <div id="html_5bdbd1a11fc44c00922c50ce49e4b160"                 style="width: 100.0%; height: 100.0%;">                 Jersey City, NJ : 82 listings</div>                 ')[0];
+                popup_73f63d609bbe47eab23087b740feb562.setContent(html_5bdbd1a11fc44c00922c50ce49e4b160);
+            
+
+            marker_4988c7d78de24cd0aea298292572a8a5.bindPopup(popup_73f63d609bbe47eab23087b740feb562);
+
+            
+        
+        
+            
+
+            var marker_64cd128a7948406e91fae353397b1327 = L.marker(
+                [28.2920249,-81.4078012],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_cddbb3ea6a764c54a9579a9b1be1f8cb = L.popup({maxWidth: '300'});
+
+            
+                var html_03689b485e52487ea03f5b8d556a925a = $('         <div id="html_03689b485e52487ea03f5b8d556a925a"                 style="width: 100.0%; height: 100.0%;">                 Kissimmee, FL : 266 listings</div>                 ')[0];
+                popup_cddbb3ea6a764c54a9579a9b1be1f8cb.setContent(html_03689b485e52487ea03f5b8d556a925a);
+            
+
+            marker_64cd128a7948406e91fae353397b1327.bindPopup(popup_cddbb3ea6a764c54a9579a9b1be1f8cb);
+
+            
+        
+        
+            
+
+            var marker_17bf775567b6488d89ff94c354b13ac7 = L.marker(
+                [32.8472711,-117.2742085],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_6918e59a662841c39998ddefa83ad587 = L.popup({maxWidth: '300'});
+
+            
+                var html_8cfc2704638d413ca7aa8769deaedda1 = $('         <div id="html_8cfc2704638d413ca7aa8769deaedda1"                 style="width: 100.0%; height: 100.0%;">                 La Jolla, CA : 53 listings</div>                 ')[0];
+                popup_6918e59a662841c39998ddefa83ad587.setContent(html_8cfc2704638d413ca7aa8769deaedda1);
+            
+
+            marker_17bf775567b6488d89ff94c354b13ac7.bindPopup(popup_6918e59a662841c39998ddefa83ad587);
+
+            
+        
+        
+            
+
+            var marker_7bf4a412ddab43c9958692e2f2909e64 = L.marker(
+                [33.5420888,-117.7834146],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_0bdbf1a1c08c49eabddf131849e4815c = L.popup({maxWidth: '300'});
+
+            
+                var html_b5be213c667249e2bbbae91985871645 = $('         <div id="html_b5be213c667249e2bbbae91985871645"                 style="width: 100.0%; height: 100.0%;">                 Laguna Beach, CA : 68 listings</div>                 ')[0];
+                popup_0bdbf1a1c08c49eabddf131849e4815c.setContent(html_b5be213c667249e2bbbae91985871645);
+            
+
+            marker_7bf4a412ddab43c9958692e2f2909e64.bindPopup(popup_0bdbf1a1c08c49eabddf131849e4815c);
+
+            
+        
+        
+            
+
+            var marker_d6803d182e064b079b0ba7b6ed500da7 = L.marker(
+                [36.1662859,-115.1492249],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_45934dd87d8f42a48d5b5e1e4605ddc2 = L.popup({maxWidth: '300'});
+
+            
+                var html_96e5f34cf4684c858dff9d457e80a0ad = $('         <div id="html_96e5f34cf4684c858dff9d457e80a0ad"                 style="width: 100.0%; height: 100.0%;">                 Las Vegas, NV : 291 listings</div>                 ')[0];
+                popup_45934dd87d8f42a48d5b5e1e4605ddc2.setContent(html_96e5f34cf4684c858dff9d457e80a0ad);
+            
+
+            marker_d6803d182e064b079b0ba7b6ed500da7.bindPopup(popup_45934dd87d8f42a48d5b5e1e4605ddc2);
+
+            
+        
+        
+            
+
+            var marker_7bc84e5268b94ed8940ac9857b954ea6 = L.marker(
+                [33.7774658,-118.188487],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_a612e06d09a046929483e1f6adbf8a5c = L.popup({maxWidth: '300'});
+
+            
+                var html_85249f515cd74504b5388b3d1323fe16 = $('         <div id="html_85249f515cd74504b5388b3d1323fe16"                 style="width: 100.0%; height: 100.0%;">                 Long Beach, CA : 113 listings</div>                 ')[0];
+                popup_a612e06d09a046929483e1f6adbf8a5c.setContent(html_85249f515cd74504b5388b3d1323fe16);
+            
+
+            marker_7bc84e5268b94ed8940ac9857b954ea6.bindPopup(popup_a612e06d09a046929483e1f6adbf8a5c);
+
+            
+        
+        
+            
+
+            var marker_630703a45e2c46f9ba05e2a4f2c0525b = L.marker(
+                [39.6856753,-74.144859],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_8a81ff104c694fbb9019a870d008d4ec = L.popup({maxWidth: '300'});
+
+            
+                var html_630725ba4c124a368978921dc220fbea = $('         <div id="html_630725ba4c124a368978921dc220fbea"                 style="width: 100.0%; height: 100.0%;">                 Long Beach, NJ : 1 listings</div>                 ')[0];
+                popup_8a81ff104c694fbb9019a870d008d4ec.setContent(html_630725ba4c124a368978921dc220fbea);
+            
+
+            marker_630703a45e2c46f9ba05e2a4f2c0525b.bindPopup(popup_8a81ff104c694fbb9019a870d008d4ec);
+
+            
+        
+        
+            
+
+            var marker_59545b77a5d94fce97b8fefde4d23146 = L.marker(
+                [40.5885116,-73.6578609],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_0462e1cc58754876bfbaeeab69b62a47 = L.popup({maxWidth: '300'});
+
+            
+                var html_a0a987c758dd40f7ae0517ad1c7f393a = $('         <div id="html_a0a987c758dd40f7ae0517ad1c7f393a"                 style="width: 100.0%; height: 100.0%;">                 Long Beach, NY : 3 listings</div>                 ')[0];
+                popup_0462e1cc58754876bfbaeeab69b62a47.setContent(html_a0a987c758dd40f7ae0517ad1c7f393a);
+            
+
+            marker_59545b77a5d94fce97b8fefde4d23146.bindPopup(popup_0462e1cc58754876bfbaeeab69b62a47);
+
+            
+        
+        
+            
+
+            var marker_3db52bb87c8d45d186f8ca1573cfc1c6 = L.marker(
+                [40.7455316,-73.9484994],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_6d62c642ce13454a80b54a2bda1ff81d = L.popup({maxWidth: '300'});
+
+            
+                var html_6e58c1fd61b74579ae915006e427b330 = $('         <div id="html_6e58c1fd61b74579ae915006e427b330"                 style="width: 100.0%; height: 100.0%;">                 Long Island City, NY : 191 listings</div>                 ')[0];
+                popup_6d62c642ce13454a80b54a2bda1ff81d.setContent(html_6e58c1fd61b74579ae915006e427b330);
+            
+
+            marker_3db52bb87c8d45d186f8ca1573cfc1c6.bindPopup(popup_6d62c642ce13454a80b54a2bda1ff81d);
+
+            
+        
+        
+            
+
+            var marker_c962fdaf93444e4e9399c0c43efa0177 = L.marker(
+                [34.0543942,-118.2439408],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_5449be604318498bad49211868c7a291 = L.popup({maxWidth: '300'});
+
+            
+                var html_fcd96b4641094b1b8ca3a790a3102704 = $('         <div id="html_fcd96b4641094b1b8ca3a790a3102704"                 style="width: 100.0%; height: 100.0%;">                 Los Angeles, CA : 3236 listings</div>                 ')[0];
+                popup_5449be604318498bad49211868c7a291.setContent(html_fcd96b4641094b1b8ca3a790a3102704);
+            
+
+            marker_c962fdaf93444e4e9399c0c43efa0177.bindPopup(popup_5449be604318498bad49211868c7a291);
+
+            
+        
+        
+            
+
+            var marker_0e2ee2112faa4ee9bc161548caf0ab24 = L.marker(
+                [39.977763,-105.1319295],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_2eb1e4f33e0a45808fc57fa198f73e6f = L.popup({maxWidth: '300'});
+
+            
+                var html_9cf0882b834c412c83079d72523a91fb = $('         <div id="html_9cf0882b834c412c83079d72523a91fb"                 style="width: 100.0%; height: 100.0%;">                 Louisville, CO : 10 listings</div>                 ')[0];
+                popup_2eb1e4f33e0a45808fc57fa198f73e6f.setContent(html_9cf0882b834c412c83079d72523a91fb);
+            
+
+            marker_0e2ee2112faa4ee9bc161548caf0ab24.bindPopup(popup_2eb1e4f33e0a45808fc57fa198f73e6f);
+
+            
+        
+        
+            
+
+            var marker_41258d9af105430db82e7eebe3bb525f = L.marker(
+                [38.2542376,-85.7594069],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_c4b0ec745f7d4f69898f19a2382c3d79 = L.popup({maxWidth: '300'});
+
+            
+                var html_3cff567ca1f54684bfaf2f2ba8d9c538 = $('         <div id="html_3cff567ca1f54684bfaf2f2ba8d9c538"                 style="width: 100.0%; height: 100.0%;">                 Louisville, KY : 86 listings</div>                 ')[0];
+                popup_c4b0ec745f7d4f69898f19a2382c3d79.setContent(html_3cff567ca1f54684bfaf2f2ba8d9c538);
+            
+
+            marker_41258d9af105430db82e7eebe3bb525f.bindPopup(popup_c4b0ec745f7d4f69898f19a2382c3d79);
+
+            
+        
+        
+            
+
+            var marker_084e0655e3ee463ca2b23fc3b75882f8 = L.marker(
+                [41.2794282,-72.598315],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_b630a258fce24c1ba363fc8a9663b054 = L.popup({maxWidth: '300'});
+
+            
+                var html_6f12aafe61af4c809575775e203db97e = $('         <div id="html_6f12aafe61af4c809575775e203db97e"                 style="width: 100.0%; height: 100.0%;">                 Madison, CT : 1 listings</div>                 ')[0];
+                popup_b630a258fce24c1ba363fc8a9663b054.setContent(html_6f12aafe61af4c809575775e203db97e);
+            
+
+            marker_084e0655e3ee463ca2b23fc3b75882f8.bindPopup(popup_b630a258fce24c1ba363fc8a9663b054);
+
+            
+        
+        
+            
+
+            var marker_a23405d821b3424d8f88d4a99395913d = L.marker(
+                [35.6055887,-88.8521189],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_1ab77867cbdf4fd19477a6d33fafddc5 = L.popup({maxWidth: '300'});
+
+            
+                var html_5795a216c1754fd8ab95ecd870d4b4c4 = $('         <div id="html_5795a216c1754fd8ab95ecd870d4b4c4"                 style="width: 100.0%; height: 100.0%;">                 Madison, TN : 2 listings</div>                 ')[0];
+                popup_1ab77867cbdf4fd19477a6d33fafddc5.setContent(html_5795a216c1754fd8ab95ecd870d4b4c4);
+            
+
+            marker_a23405d821b3424d8f88d4a99395913d.bindPopup(popup_1ab77867cbdf4fd19477a6d33fafddc5);
+
+            
+        
+        
+            
+
+            var marker_d4272f86a0a94341841897aeafe4a893 = L.marker(
+                [43.074761,-89.3837612],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_b4f5a388f835451ca42363f23683fdf1 = L.popup({maxWidth: '300'});
+
+            
+                var html_3a6f7b5d21804b0c87c3cc16cac6a426 = $('         <div id="html_3a6f7b5d21804b0c87c3cc16cac6a426"                 style="width: 100.0%; height: 100.0%;">                 Madison, WI : 59 listings</div>                 ')[0];
+                popup_b4f5a388f835451ca42363f23683fdf1.setContent(html_3a6f7b5d21804b0c87c3cc16cac6a426);
+            
+
+            marker_d4272f86a0a94341841897aeafe4a893.bindPopup(popup_b4f5a388f835451ca42363f23683fdf1);
+
+            
+        
+        
+            
+
+            var marker_ca23eba86723437caad783ae90affaae = L.marker(
+                [33.7932142,-116.5023561],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_e2cd43b182c04d6a8183124a0f467da0 = L.popup({maxWidth: '300'});
+
+            
+                var html_ece3f9928ee14835b37f7af47c5869be = $('         <div id="html_ece3f9928ee14835b37f7af47c5869be"                 style="width: 100.0%; height: 100.0%;">                 Malibu, CA : 92 listings</div>                 ')[0];
+                popup_e2cd43b182c04d6a8183124a0f467da0.setContent(html_ece3f9928ee14835b37f7af47c5869be);
+            
+
+            marker_ca23eba86723437caad783ae90affaae.bindPopup(popup_e2cd43b182c04d6a8183124a0f467da0);
+
+            
+        
+        
+            
+
+            var marker_7913ccbb4fa84824a9a07cae7429a90b = L.marker(
+                [33.8950839,-118.4000146],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_911043581e6648a7bd0301e7667875be = L.popup({maxWidth: '300'});
+
+            
+                var html_338ff358bc524244a3532b5e3604b537 = $('         <div id="html_338ff358bc524244a3532b5e3604b537"                 style="width: 100.0%; height: 100.0%;">                 Manhattan Beach, CA : 55 listings</div>                 ')[0];
+                popup_911043581e6648a7bd0301e7667875be.setContent(html_338ff358bc524244a3532b5e3604b537);
+            
+
+            marker_7913ccbb4fa84824a9a07cae7429a90b.bindPopup(popup_911043581e6648a7bd0301e7667875be);
+
+            
+        
+        
+            
+
+            var marker_39d58f2858754bda86779910b348bb66 = L.marker(
+                [33.9774017,-118.4508017],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_684762f85a154e88aabd2c4dfa16a459 = L.popup({maxWidth: '300'});
+
+            
+                var html_4b3865ca6fbb4a65a2ea022017bda8e7 = $('         <div id="html_4b3865ca6fbb4a65a2ea022017bda8e7"                 style="width: 100.0%; height: 100.0%;">                 Marina Del Rey, CA : 35 listings</div>                 ')[0];
+                popup_684762f85a154e88aabd2c4dfa16a459.setContent(html_4b3865ca6fbb4a65a2ea022017bda8e7);
+            
+
+            marker_39d58f2858754bda86779910b348bb66.bindPopup(popup_684762f85a154e88aabd2c4dfa16a459);
+
+            
+        
+        
+            
+
+            var marker_021f5f60ee0444f69ae0fd13cb8823e5 = L.marker(
+                [33.9774017,-118.4508017],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_9754e7a184654b358ba50f4fba4e7ffa = L.popup({maxWidth: '300'});
+
+            
+                var html_f55baec575d04c30a468f5b555bab8aa = $('         <div id="html_f55baec575d04c30a468f5b555bab8aa"                 style="width: 100.0%; height: 100.0%;">                 Marina del Rey, CA : 80 listings</div>                 ')[0];
+                popup_9754e7a184654b358ba50f4fba4e7ffa.setContent(html_f55baec575d04c30a468f5b555bab8aa);
+            
+
+            marker_021f5f60ee0444f69ae0fd13cb8823e5.bindPopup(popup_9754e7a184654b358ba50f4fba4e7ffa);
+
+            
+        
+        
+            
+
+            var marker_7e9cba89ebfb4e17bf1a081d7e030311 = L.marker(
+                [25.7881436,-80.1272704],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_e4dfa75280f44776b3f61e2cc3d073d0 = L.popup({maxWidth: '300'});
+
+            
+                var html_f66e0a0d66d6416bbda2438c5ed31d00 = $('         <div id="html_f66e0a0d66d6416bbda2438c5ed31d00"                 style="width: 100.0%; height: 100.0%;">                 Miami Beach, FL : 1345 listings</div>                 ')[0];
+                popup_e4dfa75280f44776b3f61e2cc3d073d0.setContent(html_f66e0a0d66d6416bbda2438c5ed31d00);
+            
+
+            marker_7e9cba89ebfb4e17bf1a081d7e030311.bindPopup(popup_e4dfa75280f44776b3f61e2cc3d073d0);
+
+            
+        
+        
+            
+
+            var marker_c15683dc1ae748a0869c1d3e01a154d2 = L.marker(
+                [25.7742658,-80.1936588],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_d9e2b02b5e364008965ccce2778a4729 = L.popup({maxWidth: '300'});
+
+            
+                var html_f2daaf2c7d484a329eb4b01b26bb67ad = $('         <div id="html_f2daaf2c7d484a329eb4b01b26bb67ad"                 style="width: 100.0%; height: 100.0%;">                 Miami, FL : 641 listings</div>                 ')[0];
+                popup_d9e2b02b5e364008965ccce2778a4729.setContent(html_f2daaf2c7d484a329eb4b01b26bb67ad);
+            
+
+            marker_c15683dc1ae748a0869c1d3e01a154d2.bindPopup(popup_d9e2b02b5e364008965ccce2778a4729);
+
+            
+        
+        
+            
+
+            var marker_b119610fa1b34ecd823f43d4c9a6f0ec = L.marker(
+                [37.9060368,-122.5449762],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_d3cd8dd0a19945c68db423e14d7903bf = L.popup({maxWidth: '300'});
+
+            
+                var html_d099f6a4199d42a299fe14526d261748 = $('         <div id="html_d099f6a4199d42a299fe14526d261748"                 style="width: 100.0%; height: 100.0%;">                 Mill Valley, CA : 80 listings</div>                 ')[0];
+                popup_d3cd8dd0a19945c68db423e14d7903bf.setContent(html_d099f6a4199d42a299fe14526d261748);
+            
+
+            marker_b119610fa1b34ecd823f43d4c9a6f0ec.bindPopup(popup_d3cd8dd0a19945c68db423e14d7903bf);
+
+            
+        
+        
+            
+
+            var marker_e4c1dbd94a4a4eed864840ab6094e1ba = L.marker(
+                [44.9772995,-93.2654691],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_b24ad95b9b86439d91367375918b7fdc = L.popup({maxWidth: '300'});
+
+            
+                var html_76bd67cfca1e4aef818e303034ce530a = $('         <div id="html_76bd67cfca1e4aef818e303034ce530a"                 style="width: 100.0%; height: 100.0%;">                 Minneapolis, MN : 138 listings</div>                 ')[0];
+                popup_b24ad95b9b86439d91367375918b7fdc.setContent(html_76bd67cfca1e4aef818e303034ce530a);
+            
+
+            marker_e4c1dbd94a4a4eed864840ab6094e1ba.bindPopup(popup_b24ad95b9b86439d91367375918b7fdc);
+
+            
+        
+        
+            
+
+            var marker_1a8a18a4be3541c88545d4b5573da60d = L.marker(
+                [37.3855745,-122.0820499],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_611ede5a61c247898a2d2759ac06bcdf = L.popup({maxWidth: '300'});
+
+            
+                var html_59111c0af066407cb3dc4fb948b2e0d7 = $('         <div id="html_59111c0af066407cb3dc4fb948b2e0d7"                 style="width: 100.0%; height: 100.0%;">                 Mountain View, CA : 72 listings</div>                 ')[0];
+                popup_611ede5a61c247898a2d2759ac06bcdf.setContent(html_59111c0af066407cb3dc4fb948b2e0d7);
+            
+
+            marker_1a8a18a4be3541c88545d4b5573da60d.bindPopup(popup_611ede5a61c247898a2d2759ac06bcdf);
+
+            
+        
+        
+            
+
+            var marker_e4f861f7ad1048d1841cb6e81cd762b9 = L.marker(
+                [38.2971367,-122.2855292],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_1e192e8a967d4ee9a0ceda8d7ba19613 = L.popup({maxWidth: '300'});
+
+            
+                var html_16dcffd941d54cecb0b19514311bf6cc = $('         <div id="html_16dcffd941d54cecb0b19514311bf6cc"                 style="width: 100.0%; height: 100.0%;">                 Napa, CA : 68 listings</div>                 ')[0];
+                popup_1e192e8a967d4ee9a0ceda8d7ba19613.setContent(html_16dcffd941d54cecb0b19514311bf6cc);
+            
+
+            marker_e4f861f7ad1048d1841cb6e81cd762b9.bindPopup(popup_1e192e8a967d4ee9a0ceda8d7ba19613);
+
+            
+        
+        
+            
+
+            var marker_02769f8f025942d1a4c7c4f5f5bf3be7 = L.marker(
+                [26.1420358,-81.7948102],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_a3e57070ce74423f8ef54b6546a3ed76 = L.popup({maxWidth: '300'});
+
+            
+                var html_5f6059271ace4dcabb941dfb255bb9eb = $('         <div id="html_5f6059271ace4dcabb941dfb255bb9eb"                 style="width: 100.0%; height: 100.0%;">                 Naples, FL : 50 listings</div>                 ')[0];
+                popup_a3e57070ce74423f8ef54b6546a3ed76.setContent(html_5f6059271ace4dcabb941dfb255bb9eb);
+            
+
+            marker_02769f8f025942d1a4c7c4f5f5bf3be7.bindPopup(popup_a3e57070ce74423f8ef54b6546a3ed76);
+
+            
+        
+        
+            
+
+            var marker_b9f272c463cc48b58f1673006d349645 = L.marker(
+                [36.1622296,-86.774353],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_f0d1609ba70645a8a095f40aa2021d2a = L.popup({maxWidth: '300'});
+
+            
+                var html_67a3abcf1e694cef8e4af227ec595ea8 = $('         <div id="html_67a3abcf1e694cef8e4af227ec595ea8"                 style="width: 100.0%; height: 100.0%;">                 Nashville, TN : 185 listings</div>                 ')[0];
+                popup_f0d1609ba70645a8a095f40aa2021d2a.setContent(html_67a3abcf1e694cef8e4af227ec595ea8);
+            
+
+            marker_b9f272c463cc48b58f1673006d349645.bindPopup(popup_f0d1609ba70645a8a095f40aa2021d2a);
+
+            
+        
+        
+            
+
+            var marker_26e213ff911744c89edd12850606a6ce = L.marker(
+                [41.3082138,-72.9250517],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_c9ec5efbacc140ed81118070519206ab = L.popup({maxWidth: '300'});
+
+            
+                var html_2b331430ab9142b088cd31b27c0397eb = $('         <div id="html_2b331430ab9142b088cd31b27c0397eb"                 style="width: 100.0%; height: 100.0%;">                 New Haven, CT : 52 listings</div>                 ')[0];
+                popup_c9ec5efbacc140ed81118070519206ab.setContent(html_2b331430ab9142b088cd31b27c0397eb);
+            
+
+            marker_26e213ff911744c89edd12850606a6ce.bindPopup(popup_c9ec5efbacc140ed81118070519206ab);
+
+            
+        
+        
+            
+
+            var marker_e956bd487c9044a18fcf00196c55de29 = L.marker(
+                [29.9499323,-90.0701155],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_d628d38cfe4b455d8759a5149d8ddb15 = L.popup({maxWidth: '300'});
+
+            
+                var html_182caf77062c4eaf9cda1f4e47448f3e = $('         <div id="html_182caf77062c4eaf9cda1f4e47448f3e"                 style="width: 100.0%; height: 100.0%;">                 New Orleans, LA : 833 listings</div>                 ')[0];
+                popup_d628d38cfe4b455d8759a5149d8ddb15.setContent(html_182caf77062c4eaf9cda1f4e47448f3e);
+            
+
+            marker_e956bd487c9044a18fcf00196c55de29.bindPopup(popup_d628d38cfe4b455d8759a5149d8ddb15);
+
+            
+        
+        
+            
+
+            var marker_af9733b077c9493ebc0339fa6ef66527 = L.marker(
+                [40.7305991,-73.9865811],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_da916ff216164b99a1f683bd761bf610 = L.popup({maxWidth: '300'});
+
+            
+                var html_ab96386a22e74b2eb83bb400e53d4d28 = $('         <div id="html_ab96386a22e74b2eb83bb400e53d4d28"                 style="width: 100.0%; height: 100.0%;">                 New York, NY : 8044 listings</div>                 ')[0];
+                popup_da916ff216164b99a1f683bd761bf610.setContent(html_ab96386a22e74b2eb83bb400e53d4d28);
+            
+
+            marker_af9733b077c9493ebc0339fa6ef66527.bindPopup(popup_da916ff216164b99a1f683bd761bf610);
+
+            
+        
+        
+            
+
+            var marker_a8056f3ccdfc4863befeebcd09118bbf = L.marker(
+                [33.6170092,-117.92944],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_1d791bdc25034a68ba0c1661d1942eef = L.popup({maxWidth: '300'});
+
+            
+                var html_c28753b6640d40de86d658c20c847839 = $('         <div id="html_c28753b6640d40de86d658c20c847839"                 style="width: 100.0%; height: 100.0%;">                 Newport Beach, CA : 84 listings</div>                 ')[0];
+                popup_1d791bdc25034a68ba0c1661d1942eef.setContent(html_c28753b6640d40de86d658c20c847839);
+            
+
+            marker_a8056f3ccdfc4863befeebcd09118bbf.bindPopup(popup_1d791bdc25034a68ba0c1661d1942eef);
+
+            
+        
+        
+            
+
+            var marker_fdd6a737d07c4519a3c6e65b6fcf5c4e = L.marker(
+                [37.8044557,-122.2713562],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_3d26ac749563447e89133129f4e6ca92 = L.popup({maxWidth: '300'});
+
+            
+                var html_a074490615144fc998bde76c16458b45 = $('         <div id="html_a074490615144fc998bde76c16458b45"                 style="width: 100.0%; height: 100.0%;">                 Oakland, CA : 434 listings</div>                 ')[0];
+                popup_3d26ac749563447e89133129f4e6ca92.setContent(html_a074490615144fc998bde76c16458b45);
+            
+
+            marker_fdd6a737d07c4519a3c6e65b6fcf5c4e.bindPopup(popup_3d26ac749563447e89133129f4e6ca92);
+
+            
+        
+        
+            
+
+            var marker_b27f70852a66454b841a007397c232a0 = L.marker(
+                [39.4078746,-79.4067116],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_a1c5f55456f94c388bb2342b249ff03c = L.popup({maxWidth: '300'});
+
+            
+                var html_ba45ad3255b9443b80d3fcfa9ef26f60 = $('         <div id="html_ba45ad3255b9443b80d3fcfa9ef26f60"                 style="width: 100.0%; height: 100.0%;">                 Oakland, MD : 1 listings</div>                 ')[0];
+                popup_a1c5f55456f94c388bb2342b249ff03c.setContent(html_ba45ad3255b9443b80d3fcfa9ef26f60);
+            
+
+            marker_b27f70852a66454b841a007397c232a0.bindPopup(popup_a1c5f55456f94c388bb2342b249ff03c);
+
+            
+        
+        
+            
+
+            var marker_9f80a5834faf4acb94790bfa6d34e9f8 = L.marker(
+                [28.5421175,-81.3790461],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_fb1e9539393849f6ba6ebe375cc0f8b2 = L.popup({maxWidth: '300'});
+
+            
+                var html_b360121e56374f62a1aaf2ea60b72745 = $('         <div id="html_b360121e56374f62a1aaf2ea60b72745"                 style="width: 100.0%; height: 100.0%;">                 Orlando, FL : 116 listings</div>                 ')[0];
+                popup_fb1e9539393849f6ba6ebe375cc0f8b2.setContent(html_b360121e56374f62a1aaf2ea60b72745);
+            
+
+            marker_9f80a5834faf4acb94790bfa6d34e9f8.bindPopup(popup_fb1e9539393849f6ba6ebe375cc0f8b2);
+
+            
+        
+        
+            
+
+            var marker_fc27616f74664c88b04d93c1f793358d = L.marker(
+                [37.442156,-122.1634471],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_b9081d78804e44eab8381c4f64427caf = L.popup({maxWidth: '300'});
+
+            
+                var html_376428e3a3b3458ba031fdde7dc75cb8 = $('         <div id="html_376428e3a3b3458ba031fdde7dc75cb8"                 style="width: 100.0%; height: 100.0%;">                 Palo Alto, CA : 100 listings</div>                 ')[0];
+                popup_b9081d78804e44eab8381c4f64427caf.setContent(html_376428e3a3b3458ba031fdde7dc75cb8);
+            
+
+            marker_fc27616f74664c88b04d93c1f793358d.bindPopup(popup_b9081d78804e44eab8381c4f64427caf);
+
+            
+        
+        
+            
+
+            var marker_ead68beeeebc48ec9c44756634d13328 = L.marker(
+                [56.5143202,8.48993064126],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_f9c07fa3c8af46c6ba74355fc2ce66ac = L.popup({maxWidth: '300'});
+
+            
+                var html_2082555465554de988092ea688820306 = $('         <div id="html_2082555465554de988092ea688820306"                 style="width: 100.0%; height: 100.0%;">                 Paris, RI : 48 listings</div>                 ')[0];
+                popup_f9c07fa3c8af46c6ba74355fc2ce66ac.setContent(html_2082555465554de988092ea688820306);
+            
+
+            marker_ead68beeeebc48ec9c44756634d13328.bindPopup(popup_f9c07fa3c8af46c6ba74355fc2ce66ac);
+
+            
+        
+        
+            
+
+            var marker_df9c80a8aff440a8af2af61e1c079300 = L.marker(
+                [33.6617962,-95.5555129],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_8e6bf7f170d343b6bc9974c6ef657ea4 = L.popup({maxWidth: '300'});
+
+            
+                var html_79a6f20fddf042768b47861d63e13777 = $('         <div id="html_79a6f20fddf042768b47861d63e13777"                 style="width: 100.0%; height: 100.0%;">                 Paris, TX : 1 listings</div>                 ')[0];
+                popup_8e6bf7f170d343b6bc9974c6ef657ea4.setContent(html_79a6f20fddf042768b47861d63e13777);
+            
+
+            marker_df9c80a8aff440a8af2af61e1c079300.bindPopup(popup_8e6bf7f170d343b6bc9974c6ef657ea4);
+
+            
+        
+        
+            
+
+            var marker_d3596ad6870346caa9a1c4cead727289 = L.marker(
+                [40.6460635,-111.497974],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_8d0d82ebcd8441cbaea11ae072ae4974 = L.popup({maxWidth: '300'});
+
+            
+                var html_154adf8c261c40f6a2307b5577f39411 = $('         <div id="html_154adf8c261c40f6a2307b5577f39411"                 style="width: 100.0%; height: 100.0%;">                 Park City, UT : 229 listings</div>                 ')[0];
+                popup_8d0d82ebcd8441cbaea11ae072ae4974.setContent(html_154adf8c261c40f6a2307b5577f39411);
+            
+
+            marker_d3596ad6870346caa9a1c4cead727289.bindPopup(popup_8d0d82ebcd8441cbaea11ae072ae4974);
+
+            
+        
+        
+            
+
+            var marker_e905751c5a154bd1ad93981fdf524236 = L.marker(
+                [34.1476452,-118.1444778],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_80ef5a5f4d014fa4a2ac78e01a643c29 = L.popup({maxWidth: '300'});
+
+            
+                var html_b2c6c3771c134605959e39064d8a5f1a = $('         <div id="html_b2c6c3771c134605959e39064d8a5f1a"                 style="width: 100.0%; height: 100.0%;">                 Pasadena, CA : 86 listings</div>                 ')[0];
+                popup_80ef5a5f4d014fa4a2ac78e01a643c29.setContent(html_b2c6c3771c134605959e39064d8a5f1a);
+            
+
+            marker_e905751c5a154bd1ad93981fdf524236.bindPopup(popup_80ef5a5f4d014fa4a2ac78e01a643c29);
+
+            
+        
+        
+            
+
+            var marker_fdaa690c3daf405facdde179f37485b1 = L.marker(
+                [39.1106375,-76.5506966543],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_ec27af5553ac4b5aa62ee7b23a2bd300 = L.popup({maxWidth: '300'});
+
+            
+                var html_c904c6f4ff954b948367dc3eac34580f = $('         <div id="html_c904c6f4ff954b948367dc3eac34580f"                 style="width: 100.0%; height: 100.0%;">                 Pasadena, MD : 1 listings</div>                 ')[0];
+                popup_ec27af5553ac4b5aa62ee7b23a2bd300.setContent(html_c904c6f4ff954b948367dc3eac34580f);
+            
+
+            marker_fdaa690c3daf405facdde179f37485b1.bindPopup(popup_ec27af5553ac4b5aa62ee7b23a2bd300);
+
+            
+        
+        
+            
+
+            var marker_372d799970004314bf5de3363a0a03d8 = L.marker(
+                [39.9523993,-75.1635898],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_41b4d5abc31f45eabfedfe0a7db6b0bf = L.popup({maxWidth: '300'});
+
+            
+                var html_bb756a4256a14dffbd53092f51f403b7 = $('         <div id="html_bb756a4256a14dffbd53092f51f403b7"                 style="width: 100.0%; height: 100.0%;">                 Philadelphia, PA : 457 listings</div>                 ')[0];
+                popup_41b4d5abc31f45eabfedfe0a7db6b0bf.setContent(html_bb756a4256a14dffbd53092f51f403b7);
+            
+
+            marker_372d799970004314bf5de3363a0a03d8.bindPopup(popup_41b4d5abc31f45eabfedfe0a7db6b0bf);
+
+            
+        
+        
+            
+
+            var marker_6b045fac87114fa1b115d3b9935e02ab = L.marker(
+                [33.4485866,-112.0773455],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_b652e60bf19a4d728e45deefa5facbbd = L.popup({maxWidth: '300'});
+
+            
+                var html_932aecb2c12b44f2b85d2245d3c99d6a = $('         <div id="html_932aecb2c12b44f2b85d2245d3c99d6a"                 style="width: 100.0%; height: 100.0%;">                 Phoenix, AZ : 167 listings</div>                 ')[0];
+                popup_b652e60bf19a4d728e45deefa5facbbd.setContent(html_932aecb2c12b44f2b85d2245d3c99d6a);
+            
+
+            marker_6b045fac87114fa1b115d3b9935e02ab.bindPopup(popup_b652e60bf19a4d728e45deefa5facbbd);
+
+            
+        
+        
+            
+
+            var marker_ca35fdfe228c49abb061ff3106fa702c = L.marker(
+                [39.5164948,-76.6160809],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_c849efd103fd42d7bfb9db14fc3c4d8c = L.popup({maxWidth: '300'});
+
+            
+                var html_c13828d7904b42dd9bea8bed1828e57f = $('         <div id="html_c13828d7904b42dd9bea8bed1828e57f"                 style="width: 100.0%; height: 100.0%;">                 Phoenix, MD : 1 listings</div>                 ')[0];
+                popup_c849efd103fd42d7bfb9db14fc3c4d8c.setContent(html_c13828d7904b42dd9bea8bed1828e57f);
+            
+
+            marker_ca35fdfe228c49abb061ff3106fa702c.bindPopup(popup_c849efd103fd42d7bfb9db14fc3c4d8c);
+
+            
+        
+        
+            
+
+            var marker_908849a9ffa241619dc7fd932f8540c1 = L.marker(
+                [40.4416941,-79.990086],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_4ff025ef9c6f4334aa785e81d5b5f66f = L.popup({maxWidth: '300'});
+
+            
+                var html_f7d8e8461d15491cb1be81e9ec32aebc = $('         <div id="html_f7d8e8461d15491cb1be81e9ec32aebc"                 style="width: 100.0%; height: 100.0%;">                 Pittsburgh, PA : 99 listings</div>                 ')[0];
+                popup_4ff025ef9c6f4334aa785e81d5b5f66f.setContent(html_f7d8e8461d15491cb1be81e9ec32aebc);
+            
+
+            marker_908849a9ffa241619dc7fd932f8540c1.bindPopup(popup_4ff025ef9c6f4334aa785e81d5b5f66f);
+
+            
+        
+        
+            
+
+            var marker_d14420a2d00748339fbc070f5851d123 = L.marker(
+                [45.5202471,-122.6741948],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_064c4323b6cb451da6c482b4eed42805 = L.popup({maxWidth: '300'});
+
+            
+                var html_1267e204f721422eb48db0178470c613 = $('         <div id="html_1267e204f721422eb48db0178470c613"                 style="width: 100.0%; height: 100.0%;">                 Portland, OR : 819 listings</div>                 ')[0];
+                popup_064c4323b6cb451da6c482b4eed42805.setContent(html_1267e204f721422eb48db0178470c613);
+            
+
+            marker_d14420a2d00748339fbc070f5851d123.bindPopup(popup_064c4323b6cb451da6c482b4eed42805);
+
+            
+        
+        
+            
+
+            var marker_059e4539469e4c7fabd858651e823892 = L.marker(
+                [41.8239891,-71.4128342],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_6040862cca8d4ed98703422ed6a26263 = L.popup({maxWidth: '300'});
+
+            
+                var html_92811816d4b140e2ad86f23e74318ea7 = $('         <div id="html_92811816d4b140e2ad86f23e74318ea7"                 style="width: 100.0%; height: 100.0%;">                 Providence, RI : 72 listings</div>                 ')[0];
+                popup_6040862cca8d4ed98703422ed6a26263.setContent(html_92811816d4b140e2ad86f23e74318ea7);
+            
+
+            marker_059e4539469e4c7fabd858651e823892.bindPopup(popup_6040862cca8d4ed98703422ed6a26263);
+
+            
+        
+        
+            
+
+            var marker_89751f4524064fdaae82266ae62c5972 = L.marker(
+                [40.6524927,-73.7914213158],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_89fa7e4f0d684d78a9da7eff864ad15b = L.popup({maxWidth: '300'});
+
+            
+                var html_547e7ec7f4eb4d87ab292fdee2c61a6a = $('         <div id="html_547e7ec7f4eb4d87ab292fdee2c61a6a"                 style="width: 100.0%; height: 100.0%;">                 Queens, NY : 457 listings</div>                 ')[0];
+                popup_89fa7e4f0d684d78a9da7eff864ad15b.setContent(html_547e7ec7f4eb4d87ab292fdee2c61a6a);
+            
+
+            marker_89751f4524064fdaae82266ae62c5972.bindPopup(popup_89fa7e4f0d684d78a9da7eff864ad15b);
+
+            
+        
+        
+            
+
+            var marker_9c4dcaec264a4bc2a7daefdc208ed30b = L.marker(
+                [35.7804015,-78.6390778],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_b92720629f4a45b5ab8c5f3310e7d77d = L.popup({maxWidth: '300'});
+
+            
+                var html_99c9ec66d5164af484db536c30d85873 = $('         <div id="html_99c9ec66d5164af484db536c30d85873"                 style="width: 100.0%; height: 100.0%;">                 Raleigh, NC : 57 listings</div>                 ')[0];
+                popup_b92720629f4a45b5ab8c5f3310e7d77d.setContent(html_99c9ec66d5164af484db536c30d85873);
+            
+
+            marker_9c4dcaec264a4bc2a7daefdc208ed30b.bindPopup(popup_b92720629f4a45b5ab8c5f3310e7d77d);
+
+            
+        
+        
+            
+
+            var marker_75b7b488588a4a36942d0f74a1eeccff = L.marker(
+                [37.9357576,-122.3477485],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_b0acce9e19dd4695b9df027906143533 = L.popup({maxWidth: '300'});
+
+            
+                var html_8a952b4393e74fe7bef2657dbb703baa = $('         <div id="html_8a952b4393e74fe7bef2657dbb703baa"                 style="width: 100.0%; height: 100.0%;">                 Richmond, CA : 24 listings</div>                 ')[0];
+                popup_b0acce9e19dd4695b9df027906143533.setContent(html_8a952b4393e74fe7bef2657dbb703baa);
+            
+
+            marker_75b7b488588a4a36942d0f74a1eeccff.bindPopup(popup_b0acce9e19dd4695b9df027906143533);
+
+            
+        
+        
+            
+
+            var marker_4f53aab93504406d9bf411d1a577b0de = L.marker(
+                [37.5385087,-77.4342799],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_ed1abdcb40f94fa8888e60268abd2e36 = L.popup({maxWidth: '300'});
+
+            
+                var html_8d679f9406904e96be06e044b469d483 = $('         <div id="html_8d679f9406904e96be06e044b469d483"                 style="width: 100.0%; height: 100.0%;">                 Richmond, IL : 1 listings</div>                 ')[0];
+                popup_ed1abdcb40f94fa8888e60268abd2e36.setContent(html_8d679f9406904e96be06e044b469d483);
+            
+
+            marker_4f53aab93504406d9bf411d1a577b0de.bindPopup(popup_ed1abdcb40f94fa8888e60268abd2e36);
+
+            
+        
+        
+            
+
+            var marker_e067ad6778f64d809ae16d682a23dd1f = L.marker(
+                [40.4333996,-80.7717477],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_87b7e71604174cc298a5729a4f526a40 = L.popup({maxWidth: '300'});
+
+            
+                var html_21875a7730de48aabd15bff2fd8a3689 = $('         <div id="html_21875a7730de48aabd15bff2fd8a3689"                 style="width: 100.0%; height: 100.0%;">                 Richmond, OH : 2 listings</div>                 ')[0];
+                popup_87b7e71604174cc298a5729a4f526a40.setContent(html_21875a7730de48aabd15bff2fd8a3689);
+            
+
+            marker_e067ad6778f64d809ae16d682a23dd1f.bindPopup(popup_87b7e71604174cc298a5729a4f526a40);
+
+            
+        
+        
+            
+
+            var marker_45bdf0a6621d46eeaa4babccac93014c = L.marker(
+                [29.5821811,-95.7607831],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_a3ae9abf06c54f0bbbacf2b5ec6da731 = L.popup({maxWidth: '300'});
+
+            
+                var html_bc583eac7066490a8ceb7bc4a0c71954 = $('         <div id="html_bc583eac7066490a8ceb7bc4a0c71954"                 style="width: 100.0%; height: 100.0%;">                 Richmond, TX : 1 listings</div>                 ')[0];
+                popup_a3ae9abf06c54f0bbbacf2b5ec6da731.setContent(html_bc583eac7066490a8ceb7bc4a0c71954);
+            
+
+            marker_45bdf0a6621d46eeaa4babccac93014c.bindPopup(popup_a3ae9abf06c54f0bbbacf2b5ec6da731);
+
+            
+        
+        
+            
+
+            var marker_2bc0ccd9fd9b4b19bd277968e397e02a = L.marker(
+                [37.5385087,-77.4342799],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_e0f2e0aa037048c79d6c39e0158e1ebb = L.popup({maxWidth: '300'});
+
+            
+                var html_3fe76987ae9d4f0e888dc2aa7e4ded8c = $('         <div id="html_3fe76987ae9d4f0e888dc2aa7e4ded8c"                 style="width: 100.0%; height: 100.0%;">                 Richmond, VA : 39 listings</div>                 ')[0];
+                popup_e0f2e0aa037048c79d6c39e0158e1ebb.setContent(html_3fe76987ae9d4f0e888dc2aa7e4ded8c);
+            
+
+            marker_2bc0ccd9fd9b4b19bd277968e397e02a.bindPopup(popup_e0f2e0aa037048c79d6c39e0158e1ebb);
+
+            
+        
+        
+            
+
+            var marker_f2435c1b8bd34ec58647dedb88ae34d2 = L.marker(
+                [38.5815719,-121.4943995],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_1ee585094a894b4daf49f35f7e9c9ce9 = L.popup({maxWidth: '300'});
+
+            
+                var html_735854a251fd460abfce76b290cd899f = $('         <div id="html_735854a251fd460abfce76b290cd899f"                 style="width: 100.0%; height: 100.0%;">                 Sacramento, CA : 57 listings</div>                 ')[0];
+                popup_1ee585094a894b4daf49f35f7e9c9ce9.setContent(html_735854a251fd460abfce76b290cd899f);
+            
+
+            marker_f2435c1b8bd34ec58647dedb88ae34d2.bindPopup(popup_1ee585094a894b4daf49f35f7e9c9ce9);
+
+            
+        
+        
+            
+
+            var marker_8321bcce8d8c401387738eb1c15111af = L.marker(
+                [40.7670126,-111.8904307],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_f8bd2bfb95644b1396543335996f241f = L.popup({maxWidth: '300'});
+
+            
+                var html_53b65615928440cfb4fcc579a67abff6 = $('         <div id="html_53b65615928440cfb4fcc579a67abff6"                 style="width: 100.0%; height: 100.0%;">                 Salt Lake City, UT : 140 listings</div>                 ')[0];
+                popup_f8bd2bfb95644b1396543335996f241f.setContent(html_53b65615928440cfb4fcc579a67abff6);
+            
+
+            marker_8321bcce8d8c401387738eb1c15111af.bindPopup(popup_f8bd2bfb95644b1396543335996f241f);
+
+            
+        
+        
+            
+
+            var marker_7850cafbee7c468796d2a188dcee5d2d = L.marker(
+                [29.4246002,-98.4951404],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_d897da623be549d3b6049e4abee01292 = L.popup({maxWidth: '300'});
+
+            
+                var html_a388ea477e8e4883a3f08d4b32a70678 = $('         <div id="html_a388ea477e8e4883a3f08d4b32a70678"                 style="width: 100.0%; height: 100.0%;">                 San Antonio, TX : 77 listings</div>                 ')[0];
+                popup_d897da623be549d3b6049e4abee01292.setContent(html_a388ea477e8e4883a3f08d4b32a70678);
+            
+
+            marker_7850cafbee7c468796d2a188dcee5d2d.bindPopup(popup_d897da623be549d3b6049e4abee01292);
+
+            
+        
+        
+            
+
+            var marker_e41140a5a9734344927fd6392f705ca3 = L.marker(
+                [32.7174209,-117.1627713],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_567b6dc08fa74356b75008d5469569cc = L.popup({maxWidth: '300'});
+
+            
+                var html_4c1797400bf54af7b5ee6bfa5d223cba = $('         <div id="html_4c1797400bf54af7b5ee6bfa5d223cba"                 style="width: 100.0%; height: 100.0%;">                 San Diego, CA : 986 listings</div>                 ')[0];
+                popup_567b6dc08fa74356b75008d5469569cc.setContent(html_4c1797400bf54af7b5ee6bfa5d223cba);
+            
+
+            marker_e41140a5a9734344927fd6392f705ca3.bindPopup(popup_567b6dc08fa74356b75008d5469569cc);
+
+            
+        
+        
+            
+
+            var marker_a60d244ca55d4b07a94a4f43adb067b3 = L.marker(
+                [37.7792768,-122.4192703],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_9077c26757634709b1954e84f7f92fa5 = L.popup({maxWidth: '300'});
+
+            
+                var html_b3b29119323f4899867334879d7aca71 = $('         <div id="html_b3b29119323f4899867334879d7aca71"                 style="width: 100.0%; height: 100.0%;">                 San Francisco, CA : 3622 listings</div>                 ')[0];
+                popup_9077c26757634709b1954e84f7f92fa5.setContent(html_b3b29119323f4899867334879d7aca71);
+            
+
+            marker_a60d244ca55d4b07a94a4f43adb067b3.bindPopup(popup_9077c26757634709b1954e84f7f92fa5);
+
+            
+        
+        
+            
+
+            var marker_3fd0cf05a580402588df74d57d114101 = L.marker(
+                [37.3361905,-121.8905832],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_e89187eb20de4cc09a0111f054499fab = L.popup({maxWidth: '300'});
+
+            
+                var html_b5cbd4ea90a64c239372f7dd3d54642c = $('         <div id="html_b5cbd4ea90a64c239372f7dd3d54642c"                 style="width: 100.0%; height: 100.0%;">                 San Jose, CA : 104 listings</div>                 ')[0];
+                popup_e89187eb20de4cc09a0111f054499fab.setContent(html_b5cbd4ea90a64c239372f7dd3d54642c);
+            
+
+            marker_3fd0cf05a580402588df74d57d114101.bindPopup(popup_e89187eb20de4cc09a0111f054499fab);
+
+            
+        
+        
+            
+
+            var marker_548a7c781ebe4157b146f4ae9e8d0058 = L.marker(
+                [37.9735346,-122.5310873],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_bb8fffad76484a118a117371cd69f933 = L.popup({maxWidth: '300'});
+
+            
+                var html_f77dd6af93fe4baaa0f667897f164629 = $('         <div id="html_f77dd6af93fe4baaa0f667897f164629"                 style="width: 100.0%; height: 100.0%;">                 San Rafael, CA : 61 listings</div>                 ')[0];
+                popup_bb8fffad76484a118a117371cd69f933.setContent(html_f77dd6af93fe4baaa0f667897f164629);
+            
+
+            marker_548a7c781ebe4157b146f4ae9e8d0058.bindPopup(popup_bb8fffad76484a118a117371cd69f933);
+
+            
+        
+        
+            
+
+            var marker_11fce1e58bfa4bde9d4c40b2de6f2e18 = L.marker(
+                [36.9746099,-122.0294258],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_ebf29d6679b84042979b01ab97a29e54 = L.popup({maxWidth: '300'});
+
+            
+                var html_7be6b1deb73f4908a8e45e10bfbf9bc7 = $('         <div id="html_7be6b1deb73f4908a8e45e10bfbf9bc7"                 style="width: 100.0%; height: 100.0%;">                 Santa Cruz, CA : 127 listings</div>                 ')[0];
+                popup_ebf29d6679b84042979b01ab97a29e54.setContent(html_7be6b1deb73f4908a8e45e10bfbf9bc7);
+            
+
+            marker_11fce1e58bfa4bde9d4c40b2de6f2e18.bindPopup(popup_ebf29d6679b84042979b01ab97a29e54);
+
+            
+        
+        
+            
+
+            var marker_c6e073ce233c4918b1ef76af092ab718 = L.marker(
+                [34.0195598,-118.4869738],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_4c2f9e2502414b34a448402065eab6a9 = L.popup({maxWidth: '300'});
+
+            
+                var html_8c4348660d474bf9aa9036c920164f25 = $('         <div id="html_8c4348660d474bf9aa9036c920164f25"                 style="width: 100.0%; height: 100.0%;">                 Santa Monica, CA : 500 listings</div>                 ')[0];
+                popup_4c2f9e2502414b34a448402065eab6a9.setContent(html_8c4348660d474bf9aa9036c920164f25);
+            
+
+            marker_c6e073ce233c4918b1ef76af092ab718.bindPopup(popup_4c2f9e2502414b34a448402065eab6a9);
+
+            
+        
+        
+            
+
+            var marker_c056ddd0bfc6424b94633e2e41a0e381 = L.marker(
+                [38.4404675,-122.7144313],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_ae1daa9dbc094a1891ec17e4519a9b06 = L.popup({maxWidth: '300'});
+
+            
+                var html_438ad8bde304495d8ff74afb3a175446 = $('         <div id="html_438ad8bde304495d8ff74afb3a175446"                 style="width: 100.0%; height: 100.0%;">                 Santa Rosa, CA : 71 listings</div>                 ')[0];
+                popup_ae1daa9dbc094a1891ec17e4519a9b06.setContent(html_438ad8bde304495d8ff74afb3a175446);
+            
+
+            marker_c056ddd0bfc6424b94633e2e41a0e381.bindPopup(popup_ae1daa9dbc094a1891ec17e4519a9b06);
+
+            
+        
+        
+            
+
+            var marker_4e57739e299943d1a33134216c95bd33 = L.marker(
+                [37.8590938,-122.4852506],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_9b3357ee27f248c18e625ecd2696a81a = L.popup({maxWidth: '300'});
+
+            
+                var html_f42107c8f23c4589992a9e5300799607 = $('         <div id="html_f42107c8f23c4589992a9e5300799607"                 style="width: 100.0%; height: 100.0%;">                 Sausalito, CA : 71 listings</div>                 ')[0];
+                popup_9b3357ee27f248c18e625ecd2696a81a.setContent(html_f42107c8f23c4589992a9e5300799607);
+            
+
+            marker_4e57739e299943d1a33134216c95bd33.bindPopup(popup_9b3357ee27f248c18e625ecd2696a81a);
+
+            
+        
+        
+            
+
+            var marker_baafe5c61cfe4df4999222fdb14ba251 = L.marker(
+                [32.0835407,-81.0998341],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_a929f2e0ac0d4ce9b9dfb7e956461e27 = L.popup({maxWidth: '300'});
+
+            
+                var html_f0616ad2f905472483b91c4b83c13f96 = $('         <div id="html_f0616ad2f905472483b91c4b83c13f96"                 style="width: 100.0%; height: 100.0%;">                 Savannah, GA : 91 listings</div>                 ')[0];
+                popup_a929f2e0ac0d4ce9b9dfb7e956461e27.setContent(html_f0616ad2f905472483b91c4b83c13f96);
+            
+
+            marker_baafe5c61cfe4df4999222fdb14ba251.bindPopup(popup_a929f2e0ac0d4ce9b9dfb7e956461e27);
+
+            
+        
+        
+            
+
+            var marker_2cb32e32ae4a4271bfcf918d03b147db = L.marker(
+                [33.5091215,-111.8992364],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_40be81278abf4447a6bb9d4848980cf0 = L.popup({maxWidth: '300'});
+
+            
+                var html_af96c4a71aaa482ea606e88c0ab29634 = $('         <div id="html_af96c4a71aaa482ea606e88c0ab29634"                 style="width: 100.0%; height: 100.0%;">                 Scottsdale, AZ : 121 listings</div>                 ')[0];
+                popup_40be81278abf4447a6bb9d4848980cf0.setContent(html_af96c4a71aaa482ea606e88c0ab29634);
+            
+
+            marker_2cb32e32ae4a4271bfcf918d03b147db.bindPopup(popup_40be81278abf4447a6bb9d4848980cf0);
+
+            
+        
+        
+            
+
+            var marker_7de2f77f31324efea0eaae7e6e5e7e0d = L.marker(
+                [47.6038321,-122.3300623],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_970e5d37ad9d42768d50b8cd44657ad0 = L.popup({maxWidth: '300'});
+
+            
+                var html_33699ba039a84a0dafa3556f5a0019dd = $('         <div id="html_33699ba039a84a0dafa3556f5a0019dd"                 style="width: 100.0%; height: 100.0%;">                 Seattle, WA : 824 listings</div>                 ')[0];
+                popup_970e5d37ad9d42768d50b8cd44657ad0.setContent(html_33699ba039a84a0dafa3556f5a0019dd);
+            
+
+            marker_7de2f77f31324efea0eaae7e6e5e7e0d.bindPopup(popup_970e5d37ad9d42768d50b8cd44657ad0);
+
+            
+        
+        
+            
+
+            var marker_bbc9c49214b94c189fba8f226514210b = L.marker(
+                [38.4021359,-122.8238805],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_bb8d58942e2648f8ab24cda5df3d4076 = L.popup({maxWidth: '300'});
+
+            
+                var html_32048dde1c83428a8d615825bd20d84a = $('         <div id="html_32048dde1c83428a8d615825bd20d84a"                 style="width: 100.0%; height: 100.0%;">                 Sebastopol, CA : 49 listings</div>                 ')[0];
+                popup_bb8d58942e2648f8ab24cda5df3d4076.setContent(html_32048dde1c83428a8d615825bd20d84a);
+            
+
+            marker_bbc9c49214b94c189fba8f226514210b.bindPopup(popup_bb8d58942e2648f8ab24cda5df3d4076);
+
+            
+        
+        
+            
+
+            var marker_8e3d6bc31ac74e1a96cf5cc4304497b9 = L.marker(
+                [38.9959081,-77.0288917],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_8f3c92e1a64246db999c6428a380d65a = L.popup({maxWidth: '300'});
+
+            
+                var html_b020e45c4713418b8a73970d24ee1e77 = $('         <div id="html_b020e45c4713418b8a73970d24ee1e77"                 style="width: 100.0%; height: 100.0%;">                 Silver Spring, MD : 53 listings</div>                 ')[0];
+                popup_8f3c92e1a64246db999c6428a380d65a.setContent(html_b020e45c4713418b8a73970d24ee1e77);
+            
+
+            marker_8e3d6bc31ac74e1a96cf5cc4304497b9.bindPopup(popup_8f3c92e1a64246db999c6428a380d65a);
+
+            
+        
+        
+            
+
+            var marker_0a287df12ba7419993a236490ffcca9a = L.marker(
+                [42.3875968,-71.0994967],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_7439b3146d6a4bcab4e88994a7df7f8c = L.popup({maxWidth: '300'});
+
+            
+                var html_44a6c996aae64034a7a99111c7698145 = $('         <div id="html_44a6c996aae64034a7a99111c7698145"                 style="width: 100.0%; height: 100.0%;">                 Somerville, MA : 99 listings</div>                 ')[0];
+                popup_7439b3146d6a4bcab4e88994a7df7f8c.setContent(html_44a6c996aae64034a7a99111c7698145);
+            
+
+            marker_0a287df12ba7419993a236490ffcca9a.bindPopup(popup_7439b3146d6a4bcab4e88994a7df7f8c);
+
+            
+        
+        
+            
+
+            var marker_74f4aa708d7849b5bf00e9cce20357ea = L.marker(
+                [38.5110803,-122.8473387],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_7406fc34b24b478094371ad81f57bce6 = L.popup({maxWidth: '300'});
+
+            
+                var html_05fee2655ace43c4bc4eb89af46848e6 = $('         <div id="html_05fee2655ace43c4bc4eb89af46848e6"                 style="width: 100.0%; height: 100.0%;">                 Sonoma, CA : 115 listings</div>                 ')[0];
+                popup_7406fc34b24b478094371ad81f57bce6.setContent(html_05fee2655ace43c4bc4eb89af46848e6);
+            
+
+            marker_74f4aa708d7849b5bf00e9cce20357ea.bindPopup(popup_7406fc34b24b478094371ad81f57bce6);
+
+            
+        
+        
+            
+
+            var marker_278e7358886b4d19a31731a1726b8324 = L.marker(
+                [25.939003,-80.1255337722],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_0da70a3d5dbd4e8998a0ddfc8a18f808 = L.popup({maxWidth: '300'});
+
+            
+                var html_2a78fe3d3f134ac8b58ec9a58037dfe1 = $('         <div id="html_2a78fe3d3f134ac8b58ec9a58037dfe1"                 style="width: 100.0%; height: 100.0%;">                 Sunny Isles Beach, FL : 161 listings</div>                 ')[0];
+                popup_0da70a3d5dbd4e8998a0ddfc8a18f808.setContent(html_2a78fe3d3f134ac8b58ec9a58037dfe1);
+            
+
+            marker_278e7358886b4d19a31731a1726b8324.bindPopup(popup_0da70a3d5dbd4e8998a0ddfc8a18f808);
+
+            
+        
+        
+            
+
+            var marker_0be647232e2842c3abd1165a767e2d43 = L.marker(
+                [27.9477595,-82.4584439],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_fe48e08b27af4af5a1de48e00c6695ae = L.popup({maxWidth: '300'});
+
+            
+                var html_cd117c422cad442a89b380fb4d77fd83 = $('         <div id="html_cd117c422cad442a89b380fb4d77fd83"                 style="width: 100.0%; height: 100.0%;">                 Tampa, FL : 78 listings</div>                 ')[0];
+                popup_fe48e08b27af4af5a1de48e00c6695ae.setContent(html_cd117c422cad442a89b380fb4d77fd83);
+            
+
+            marker_0be647232e2842c3abd1165a767e2d43.bindPopup(popup_fe48e08b27af4af5a1de48e00c6695ae);
+
+            
+        
+        
+            
+
+            var marker_bf1e797c57b34593afc33d58fe080b14 = L.marker(
+                [36.4072485,-105.5730664],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_5467ba8563dd44909ec6a9ce5738584d = L.popup({maxWidth: '300'});
+
+            
+                var html_9124301f3603487a9d9e8223eb676a0e = $('         <div id="html_9124301f3603487a9d9e8223eb676a0e"                 style="width: 100.0%; height: 100.0%;">                 Taos, NM : 52 listings</div>                 ')[0];
+                popup_5467ba8563dd44909ec6a9ce5738584d.setContent(html_9124301f3603487a9d9e8223eb676a0e);
+            
+
+            marker_bf1e797c57b34593afc33d58fe080b14.bindPopup(popup_5467ba8563dd44909ec6a9ce5738584d);
+
+            
+        
+        
+            
+
+            var marker_db92aae903c544cfa51465bffd83a3a1 = L.marker(
+                [39.5149365,-119.7276825],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_0cbf437242b44eef8e12a42da226c59e = L.popup({maxWidth: '300'});
+
+            
+                var html_d755d2aebb224cf999f6e60b98cb7ad3 = $('         <div id="html_d755d2aebb224cf999f6e60b98cb7ad3"                 style="width: 100.0%; height: 100.0%;">                 Truckee, NV : 67 listings</div>                 ')[0];
+                popup_0cbf437242b44eef8e12a42da226c59e.setContent(html_d755d2aebb224cf999f6e60b98cb7ad3);
+            
+
+            marker_db92aae903c544cfa51465bffd83a3a1.bindPopup(popup_0cbf437242b44eef8e12a42da226c59e);
+
+            
+        
+        
+            
+
+            var marker_a186988bf5cb49a6aff6b2c255f17827 = L.marker(
+                [32.2217422,-110.9264758],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_8fd95e98068e4addb1192025eae6b268 = L.popup({maxWidth: '300'});
+
+            
+                var html_bf2c717b427b4383b52ffdea79a5ce53 = $('         <div id="html_bf2c717b427b4383b52ffdea79a5ce53"                 style="width: 100.0%; height: 100.0%;">                 Tucson, AZ : 195 listings</div>                 ')[0];
+                popup_8fd95e98068e4addb1192025eae6b268.setContent(html_bf2c717b427b4383b52ffdea79a5ce53);
+            
+
+            marker_a186988bf5cb49a6aff6b2c255f17827.bindPopup(popup_8fd95e98068e4addb1192025eae6b268);
+
+            
+        
+        
+            
+
+            var marker_6006361fff36411caab99b24ddab9c18 = L.marker(
+                [33.995044,-118.4668874],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_0ca034af3ba44cfa8b4360a7130f7cc3 = L.popup({maxWidth: '300'});
+
+            
+                var html_102328fac3f74aa48b5f7834078311ef = $('         <div id="html_102328fac3f74aa48b5f7834078311ef"                 style="width: 100.0%; height: 100.0%;">                 Venice, CA : 242 listings</div>                 ')[0];
+                popup_0ca034af3ba44cfa8b4360a7130f7cc3.setContent(html_102328fac3f74aa48b5f7834078311ef);
+            
+
+            marker_6006361fff36411caab99b24ddab9c18.bindPopup(popup_0ca034af3ba44cfa8b4360a7130f7cc3);
+
+            
+        
+        
+            
+
+            var marker_e2f7a4164699472db0e2ddb5e14512d1 = L.marker(
+                [38.8949549,-77.0366455],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_ec90b9f54cf94a148ee59cc68d936973 = L.popup({maxWidth: '300'});
+
+            
+                var html_785b0797a17e4ca2869c49a529cec4b9 = $('         <div id="html_785b0797a17e4ca2869c49a529cec4b9"                 style="width: 100.0%; height: 100.0%;">                 Washington, DC : 1402 listings</div>                 ')[0];
+                popup_ec90b9f54cf94a148ee59cc68d936973.setContent(html_785b0797a17e4ca2869c49a529cec4b9);
+            
+
+            marker_e2f7a4164699472db0e2ddb5e14512d1.bindPopup(popup_ec90b9f54cf94a148ee59cc68d936973);
+
+            
+        
+        
+            
+
+            var marker_85af421a02524613851218e496a5cfbf = L.marker(
+                [34.0900091,-118.3617442],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_c8fe053974d74ca3812d8a3e080fab7f);
+            
+        
+            
+            var popup_ce780ffb126c416badbc9db78fab1df5 = L.popup({maxWidth: '300'});
+
+            
+                var html_d497d11dc15a431a9f1cac4e0a17b238 = $('         <div id="html_d497d11dc15a431a9f1cac4e0a17b238"                 style="width: 100.0%; height: 100.0%;">                 West Hollywood, CA : 229 listings</div>                 ')[0];
+                popup_ce780ffb126c416badbc9db78fab1df5.setContent(html_d497d11dc15a431a9f1cac4e0a17b238);
+            
+
+            marker_85af421a02524613851218e496a5cfbf.bindPopup(popup_ce780ffb126c416badbc9db78fab1df5);
+
+            
+        
+        
+        
+        </script>
+        
